@@ -4,6 +4,7 @@
 - 🌱 I’m currently learning Machine learning
 - 💬 Ask me about Python or C
 - 📫 How to reach me: ...ashutosh.pandeyhlr007@gmail.com
+- ✅ DM me on Instagram:...https://www.instagram.com/ashutosh_pandey1999/
 
 
 <!--
