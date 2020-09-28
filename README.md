@@ -4,7 +4,7 @@
 - 🌱 I’m currently learning Machine learning
 - 💬 Ask me about Python or C
 - 📫 My Portfolio Website༼ つ ◕_◕ ༽つ: ...https://datacrusade1999.github.io/
-- ✅ DM me on Instagram:...https://www.instagram.com/ashutosh_pandey1999/
+- ✅ DM me on Instagram: ...https://www.instagram.com/ashutosh_pandey1999/
 
 
 <!--
