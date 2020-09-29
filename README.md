@@ -5,7 +5,7 @@
 - 💬 Ask me about Python or C
 - 📫 My Portfolio Website༼ つ ◕_◕ ༽つ: ...https://datacrusade1999.github.io/
 - ✅ DM me on Instagram: ...https://www.instagram.com/ashutosh_pandey1999/
-- [![Ashutosh Pandey's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/datacrusade1999)
+
 
 
 <!--
