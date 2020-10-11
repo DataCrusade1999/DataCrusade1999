@@ -7,7 +7,6 @@
 - ✅ DM me on Instagram: ...https://www.instagram.com/ashutosh_pandey1999/
 
 
-[![Ashutosh Pandey's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/datacrusade1999)
 <!--
 **DataCrusade1999/DataCrusade1999** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
