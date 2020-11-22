@@ -2,7 +2,7 @@
 
 - 🔭 I’m currently working on a Project
 - 🌱 I’m currently learning Machine learning
-- 💬 Ask me about anything (here)[https://twitter.com/DataCrusade1999]
+- 💬 Ask me about anything [here](https://twitter.com/DataCrusade1999)
 - 📫 My Portfolio Website༼ つ ◕_◕ ༽つ: ...https://datacrusade1999.github.io/
 - ✅ DM me on Instagram: ...https://www.instagram.com/ashutosh_pandey1999/
 
