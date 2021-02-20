@@ -19,6 +19,7 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [Quantitative Analysis?](https://medium.com/@ashutosh.pandeyhlr007/quantitative-analysis-ba7f3826fa49?source=rss-159a035336bb------2)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
