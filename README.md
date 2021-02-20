@@ -17,7 +17,7 @@
 
 - ⚡ Fun fact **children have more energy than endurance athletes.**
 
-### Blogs posts
+### 📕📕 Blog posts
 <!-- BLOG-POST-LIST:START -->
 - [Quantitative Analysis?](https://medium.com/@ashutosh.pandeyhlr007/quantitative-analysis-ba7f3826fa49?source=rss-159a035336bb------2)
 <!-- BLOG-POST-LIST:END -->
