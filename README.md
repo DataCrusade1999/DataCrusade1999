@@ -24,7 +24,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://dev.to/https://dev.to/datacrusade1999" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="https://dev.to/datacrusade1999" height="30" width="40" /></a>
+<a href="https://dev.to/datacrusade1999" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="https://dev.to/datacrusade1999" height="30" width="40" /></a>
 <a href="https://twitter.com/datacrusade1999" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="datacrusade1999" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/ashutosh-pandey-25bbba15b/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="https://www.linkedin.com/in/ashutosh-pandey-25bbba15b/" height="30" width="40" /></a>
 <a href="https://fb.com/https://www.facebook.com/ashu0070070/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="https://www.facebook.com/ashu0070070/" height="30" width="40" /></a>
