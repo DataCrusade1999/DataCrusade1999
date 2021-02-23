@@ -15,7 +15,9 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-- ⚡ Fun fact **children have more energy than endurance athletes.**
+- ⚡ Fun fact **<!-- Markdown -->
+
+![Jokes Card](https://readme-jokes.vercel.app/api)**
 
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal)](https://github.com/piyushsuthar/github-readme-quotes)
 
