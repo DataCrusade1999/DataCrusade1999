@@ -7,11 +7,11 @@
 
 - 🌱 I’m currently learning **Machine Learning**
 
+<img align="right" alt="Giphy" width="400" src="https://media0.giphy.com/media/cnuS67F8IoVTYRvJXE/giphy.gif?cid=ecf05e47fbabnc7fiw1cms6yey73ex3qstu3t5ip2rapu5f2&rid=giphy.gif">
+
 - 👨‍💻 All of my projects are available [here](https://datacrusade1999.github.io/)
 
 - 📝 I regularly write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
-
-<img align="right" alt="Matteo Goi from Dribble" width="400" src="https://media0.giphy.com/media/cnuS67F8IoVTYRvJXE/giphy.gif?cid=ecf05e47fbabnc7fiw1cms6yey73ex3qstu3t5ip2rapu5f2&rid=giphy.gif">
 
 - 💬 Ask me about **Python,C++,Java**
 
