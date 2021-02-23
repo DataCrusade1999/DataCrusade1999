@@ -5,9 +5,9 @@
 
 - 🔭 I’m currently working on **Car Damage Detection**
 
-- 🌱 I’m currently learning **Machine Learning**
-
 <img align="right" alt="Giphy" width="400" src="https://media0.giphy.com/media/cnuS67F8IoVTYRvJXE/giphy.gif?cid=ecf05e47fbabnc7fiw1cms6yey73ex3qstu3t5ip2rapu5f2&rid=giphy.gif">
+
+- 🌱 I’m currently learning **Machine Learning**
 
 - 👨‍💻 All of my projects are available [here](https://datacrusade1999.github.io/)
 
