@@ -15,13 +15,9 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-- 🤣🤣 <!-- Markdown -->
+- ⚡ Quotes [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal)](https://github.com/piyushsuthar/github-readme-quotes)
 
-![Jokes Card](https://readme-jokes.vercel.app/api)
-
-- ⚡ Quotes
-
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal)](https://github.com/piyushsuthar/github-readme-quotes)
+- Now Time for a Joke🤣🤣 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 ### 📕📕 Blog posts
 <!-- BLOG-POST-LIST:START -->
