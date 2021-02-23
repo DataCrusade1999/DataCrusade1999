@@ -22,6 +22,11 @@
 - [Quantitative Analysis?](https://medium.com/@ashutosh.pandeyhlr007/quantitative-analysis-ba7f3826fa49?source=rss-159a035336bb------2)
 <!-- BLOG-POST-LIST:END -->
 
+### 🎧🎧 Listening To
+
+[![Spotify](https://novatorem-omega-one.vercel.app/api/spotify)](https://open.spotify.com/user/https://novatorem-omega-one.vercel.app)
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://dev.to/datacrusade1999" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="https://dev.to/datacrusade1999" height="30" width="40" /></a>
