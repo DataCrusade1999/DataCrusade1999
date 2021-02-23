@@ -17,6 +17,8 @@
 
 - ⚡ Fun fact **children have more energy than endurance athletes.**
 
+- 🙂[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal)](https://github.com/piyushsuthar/github-readme-quotes)
+
 ### 📕📕 Blog posts
 <!-- BLOG-POST-LIST:START -->
 - [Quantitative Analysis?](https://medium.com/@ashutosh.pandeyhlr007/quantitative-analysis-ba7f3826fa49?source=rss-159a035336bb------2)
