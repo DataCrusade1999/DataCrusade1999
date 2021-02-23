@@ -11,11 +11,11 @@
 
 - 📝 I regularly write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
 
+<img align="right" alt="Matteo Goi from Dribble" width="400" src="https://cdn.dribbble.com/users/1301752/screenshots/15176096/media/60b5b5077c37b35840bc4f2ce10a584a.gif">
+
 - 💬 Ask me about **Python,C++,Java**
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
-
-<img align="right" alt="Matteo Goi from Dribble" width="400" src="https://cdn.dribbble.com/users/1301752/screenshots/15176096/media/60b5b5077c37b35840bc4f2ce10a584a.gif">
 
 - ⚡ Quotes
 
