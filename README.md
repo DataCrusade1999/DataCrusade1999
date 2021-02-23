@@ -15,9 +15,11 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-- ⚡ Fun fact **<!-- Markdown -->
+- ⚡ Fun fact <!-- Markdown -->
 
-![Jokes Card](https://readme-jokes.vercel.app/api)**
+![Jokes Card](https://readme-jokes.vercel.app/api)
+
+- ⚡ Quotes
 
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal)](https://github.com/piyushsuthar/github-readme-quotes)
 
