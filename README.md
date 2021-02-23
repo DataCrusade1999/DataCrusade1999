@@ -3,7 +3,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=datacrusade1999" alt="datacrusade1999" /></a> </p>
 
-<img align="right" alt="Giphy" width="400" src="https://media0.giphy.com/media/cnuS67F8IoVTYRvJXE/giphy.gif?cid=ecf05e47fbabnc7fiw1cms6yey73ex3qstu3t5ip2rapu5f2&rid=giphy.gif">
+<img align="right" alt="Giphy" width="400" src="https://media3.giphy.com/media/3o7btSIGiuRJZJCS9W/giphy.gif?cid=ecf05e473ulbjtfgwhtyz3ghd4e97q5rjwp1edopmu7e3woz&rid=giphy.gif">
 
 - 🔭 I’m currently working on **Car Damage Detection**
 
