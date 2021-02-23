@@ -7,9 +7,9 @@
 
 - 🌱 I’m currently learning **Machine Learning**
 
-- 👨‍💻 All of my projects are available at [https://datacrusade1999.github.io/](https://datacrusade1999.github.io/)
+- 👨‍💻 All of my projects are available [here](https://datacrusade1999.github.io/)
 
-- 📝 I regularly write articles on [https://medium.com/@ashutosh.pandeyhlr007](https://medium.com/@ashutosh.pandeyhlr007)
+- 📝 I regularly write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
 
 - 💬 Ask me about **Python,C++,Java**
 
