@@ -15,7 +15,7 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-- ⚡ Fun fact <!-- Markdown -->
+- 🤣🤣 <!-- Markdown -->
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
