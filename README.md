@@ -15,6 +15,8 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
+-  <img align="right" alt="Matteo Goi from Dribble" width="400" src="https://cdn.dribbble.com/users/1301752/screenshots/15176096/media/60b5b5077c37b35840bc4f2ce10a584a.gif">
+
 - ⚡ Quotes
 
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical)](https://github.com/piyushsuthar/github-readme-quotes)
