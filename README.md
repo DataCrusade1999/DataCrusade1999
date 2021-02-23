@@ -27,6 +27,10 @@
 [![Spotify](https://novatorem-omega-one.vercel.app/api/spotify)](https://open.spotify.com/user/https://novatorem-omega-one.vercel.app)
 
 
+### 🤖🤖 Stackoverflow
+
+[![Ashutosh Pandey StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=13128057)](https://stackoverflow.com/users/13128057/datacrusade1999)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://dev.to/datacrusade1999" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="https://dev.to/datacrusade1999" height="30" width="40" /></a>
