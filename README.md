@@ -25,10 +25,6 @@
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
-### 📱 Latest Tweets
-
-<!-- TWITTER:START -->
-<!-- TWITTER:END -->
 
 ### 📕📕 Blog posts
 
