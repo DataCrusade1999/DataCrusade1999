@@ -25,6 +25,15 @@
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
+### 📱 Latest Tweets
+
+<!-- TWITTER:START -->
+- [@DataCrusade1999: How to Make Your Code Reviewer Fall in Love with You  via @deliberatecoder](https://rss.app/articles/cb4e791f6f6d729c074351566bd3a7c508111d6e3b3ea6e0e1f0920984826296bb46fc132a9c8f2cb6e1757cdc12069563dc6ae4ca107b128e39c26788c3)
+- [@DataCrusade1999: Check out my GitHub Skyline!](https://rss.app/articles/cb4e791f6f6d729c074351566bd3a7c508111d6e3b3ea6e0e1f0920984826296bb46fc132a9c8f2cb6e1757cdc12069562dd60e7c3117211893bc76384c0)
+- [@DataCrusade1999: #UnacademySachinFilm People were boycotting Unacademy a few months back what happened Now](https://rss.app/articles/cb4e791f6f6d729c074351566bd3a7c508111d6e3b3ea6e0e1f0920984826296bb46fc132a9c8f2cb6e1757cdc12089367d768e1c21072168c33c76389c2)
+- [@DataCrusade1999: #modi_job_doGuys keep it up we are trending number 1 in the world.](https://rss.app/articles/cb4e791f6f6d729c074351566bd3a7c508111d6e3b3ea6e0e1f0920984826296bb46fc132a9c8f2cb6e1757cdc120b9b67d26de7cb117c128f32c66687ca)
+- [@syedasimwaqar: Hahahaha @sakshijoshii ji And finally it is checked ...](https://rss.app/articles/cb4e791f6f6d729c074351566bd3a7c508111d6e0c26b7e5c3f18e17928776c6f050b648389c9b2beca3697bdf120e9769d661e4c71372168338c760)
+<!-- TWITTER:END -->
 
 ### 📕📕 Blog posts
 
