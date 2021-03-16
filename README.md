@@ -1,4 +1,4 @@
- <img  align="center" width="500" src="Header.svg" alt="Header.svg" />
+ <h1> <img src="Header.svg" alt="Header.svg" /> </h1>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" /> </p>
 
