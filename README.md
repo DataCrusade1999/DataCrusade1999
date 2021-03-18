@@ -56,7 +56,7 @@
 
 <details>
 <summary>Github Stats</summary>
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=datacrusade1999&show_icons=true&locale=en" alt="datacrusade1999" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=datacrusade1999&show_icons=true&locale=en" alt="datacrusade1999" /></p>
 </details>
 
 
