@@ -5,7 +5,7 @@
 
 <img align="right" alt="Giphy" width="400" src="https://media3.giphy.com/media/3o7btSIGiuRJZJCS9W/giphy.gif?cid=ecf05e473ulbjtfgwhtyz3ghd4e97q5rjwp1edopmu7e3woz&rid=giphy.gif">
 
-- 🔭 I’m currently working on **Car Damage Detection**
+- 🔭 I’m a Core Team Member of [GDSC ABESIT](https://github.com/dscabesit)
 
 - 🌱 I’m currently learning **Machine Learning**
 
