@@ -1,19 +1,24 @@
 <h1 align="left"><img src="Header.svg" alt="Header.svg"/></h1>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=datacrusade1999" alt="datacrusade1999" /></a> </p>
+<p align="left">
+<img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" />
+</p>
+
+<p align="left">
+<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=datacrusade1999" alt="datacrusade1999" /></a>
+</p>
 
 <img align="right" alt="Giphy" width="400" src="https://media3.giphy.com/media/3o7btSIGiuRJZJCS9W/giphy.gif?cid=ecf05e473ulbjtfgwhtyz3ghd4e97q5rjwp1edopmu7e3woz&rid=giphy.gif">
 
-- 🔭 I’m a Core Team Member of [GDSC ABESIT](https://github.com/dscabesit)
+- 🔭 I’m a Core Team Member of [GDSC ABESIT](https://gdsc.community.dev/abes-institute-of-technology-ghaziabad/)
 
-- 🌱 I’m currently learning **Machine Learning**
+- 🌱 I’m interested in **Machine Learning and Web Development**
 
-- 👨‍💻 All of my projects are available [here](https://datacrusade1999.github.io/)
+- 👨‍💻 My demo portfolio website is [here](https://datacrusade1999.github.io/)
 
-- 📝 I regularly write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
+- 📝 I occasionally only write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
 
-- 💬 Ask me about **Python,C++,Java**
+- 💬 Ask me about **Python,C++**
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
@@ -24,7 +29,6 @@
 - Now Time for a Joke🤣🤣
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
-
 
 ### 📕📕 Blog posts
 
@@ -58,5 +62,3 @@
 <summary>Github Stats</summary>
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=datacrusade1999&show_icons=true&locale=en" alt="datacrusade1999" /></p>
 </details>
-
-
