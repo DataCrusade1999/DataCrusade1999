@@ -4,9 +4,7 @@
 <img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" />
 </p>
 
-<p align="left">
-<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=datacrusade1999" alt="datacrusade1999" /></a>
-</p>
+[![trophy](https://github-profile-trophy.vercel.app/?username=DataCrusade1999&row=2)](https://github.com/ryo-ma/github-profile-trophy)
 
 <img align="right" alt="Giphy" width="400" src="https://media3.giphy.com/media/3o7btSIGiuRJZJCS9W/giphy.gif?cid=ecf05e473ulbjtfgwhtyz3ghd4e97q5rjwp1edopmu7e3woz&rid=giphy.gif">
 
@@ -16,7 +14,7 @@
 
 - 👨‍💻 My demo portfolio website is [here](https://datacrusade1999.github.io/)
 
-- 📝 I occasionally only write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
+- 📝 I occasionally write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
 
 - 💬 Ask me about **Python,C++**
 
