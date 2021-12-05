@@ -4,7 +4,7 @@
 <img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" />
 </p>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=DataCrusade1999&row=2)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DataCrusade1999&row=8&rank=S,AA,C,B&margin-w=15&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
 <img align="right" alt="Giphy" width="400" src="https://media3.giphy.com/media/3o7btSIGiuRJZJCS9W/giphy.gif?cid=ecf05e473ulbjtfgwhtyz3ghd4e97q5rjwp1edopmu7e3woz&rid=giphy.gif">
 
