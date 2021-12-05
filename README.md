@@ -1,4 +1,4 @@
-<h2 align="left"><img src="Header.svg" alt="Header.svg"/></h2>
+<h6 align="left"><img src="Header.svg" alt="Header.svg"/></h6>
 
 <p align="left">
 <img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" />
@@ -21,10 +21,6 @@
 - 💬 Ask me about **Python,C++**
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
-
-- ⚡ Quotes
-
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
 
 - Now Time for a Joke🤣🤣
 
