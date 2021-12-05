@@ -1,8 +1,6 @@
 <h6 align="left"><img src="Header.svg" alt="Header.svg"/></h6>
 
-<p align="left">
-<img src="https://komarev.com/ghpvc/?username=datacrusade1999&label=Profile%20views&color=0e75b6&style=flat" alt="datacrusade1999" />
-</p>
+![](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=DataCrusade1999&row=8&rank=S,AA,C,B&margin-w=15&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
