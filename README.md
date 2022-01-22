@@ -48,3 +48,5 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DataCrusade1999)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DataCrusade1999&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+<a href="https://www.digitalocean.com/?refcode=167621bee18a&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" /></a>
