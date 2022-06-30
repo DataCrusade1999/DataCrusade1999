@@ -6,7 +6,7 @@
 
 <img align="right" alt="Giphy" width="400" src="https://media3.giphy.com/media/3o7btSIGiuRJZJCS9W/giphy.gif?cid=ecf05e473ulbjtfgwhtyz3ghd4e97q5rjwp1edopmu7e3woz&rid=giphy.gif">
 
-- 🔭 I’m a Core Team Member of [GDSC ABESIT](https://gdsc.community.dev/abes-institute-of-technology-ghaziabad/) and I've spoken at some technical [events](https://bit.ly/3EbGR5w) also and would like to give more to the community feel free to reach out.
+- 🔭 I’m a Former core team member of [GDSC ABESIT](https://gdsc.community.dev/abes-institute-of-technology-ghaziabad/) and I've spoken at some technical [events](https://bit.ly/3EbGR5w) also and would like to give more to the community feel free to reach out.
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
 
