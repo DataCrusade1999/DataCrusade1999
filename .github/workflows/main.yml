@@ -19,8 +19,6 @@ jobs:
             filename: metrics.plugin.people.repository.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
-            template: repository
-            repo: metrics
             plugin_people: yes
             plugin_people_types: followers, following
             plugin_people_limit: 50
