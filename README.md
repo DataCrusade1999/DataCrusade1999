@@ -2,10 +2,6 @@
 
 ![](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=DataCrusade1999&row=8&rank=S,AA,C,B&margin-w=15&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
-
-
-
 - 🔭 I’m a Former core team member of [GDSC ABESIT](https://gdsc.community.dev/abes-institute-of-technology-ghaziabad/) and I've spoken at some technical [events](https://bit.ly/3EbGR5w) also and would like to give more to the community feel free to reach out.
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
