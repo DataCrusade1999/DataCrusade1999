@@ -22,7 +22,7 @@ jobs:
             template: repository
             repo: metrics
             plugin_people: yes
-            plugin_people_types: contributors, stargazers, watchers, sponsors,followers, following
+            plugin_people_types: followers, following
             plugin_people_limit: 50
             plugin_people_size: 50
 
@@ -48,7 +48,7 @@ jobs:
           plugin_discussions_categories: yes
 
 
-      -   name: Indepth analysis
+      -   name: Indepth analysis for notable repositories
           uses: lowlighter/metrics@latest
           with:
             filename: metrics.plugin.notable.indepth.svg
@@ -70,7 +70,7 @@ jobs:
             plugin_stars: yes
             plugin_stars_limit: 4
 
-      -   name: Indepth analysis
+      -   name: Indepth analysis for programming languages
           uses: lowlighter/metrics@latest
           with:
             filename: metrics.plugin.languages.indepth.svg
