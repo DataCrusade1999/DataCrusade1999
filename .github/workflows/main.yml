@@ -13,6 +13,19 @@ jobs:
       contents: write
     steps:
 
+      -   name: Indepth analysis
+          uses: lowlighter/metrics@latest
+          with:
+            filename: metrics.plugin.notable.indepth.svg
+            token: ${{ secrets.METRICS_TOKEN }}
+            base: ""
+            plugin_notable: yes
+            plugin_notable_indepth: yes
+            plugin_notable_repositories: yes
+            plugin_notable_from: organization
+            plugin_notable_types: commit
+
+
       -   name: Recently starred
           uses: lowlighter/metrics@latest
           with:
@@ -101,9 +114,6 @@ jobs:
           plugin_followup: yes
           plugin_followup_archived: yes
           plugin_followup_sections: repositories
-          plugin_notable: yes
-          plugin_notable_from: organization
-          plugin_notable_types: commit
           plugin_people: yes
           plugin_people_limit: 24
           plugin_people_size: 28
