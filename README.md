@@ -42,6 +42,8 @@
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
+![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)
+
 ![Recent Activity](./metrics.plugin.activity.svg)
 
 ![stackoverflow](./metrics.plugin.stackoverflow.svg)
