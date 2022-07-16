@@ -12,6 +12,18 @@ jobs:
     permissions:
       contents: write
     steps:
+
+      -   name: Top answers from stackoverflow
+          uses: lowlighter/metrics@latest
+          with:
+            filename: metrics.plugin.stackoverflow.svg
+            token: NOT_NEEDED
+            base: ""
+            plugin_stackoverflow: yes
+            plugin_stackoverflow_user: 13128057
+            plugin_stackoverflow_sections: answers-top
+            plugin_stackoverflow_limit: 2
+
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
@@ -63,3 +75,4 @@ jobs:
           plugin_people_types: followers, following
           plugin_stars: yes
           plugin_stars_limit: 4
+
