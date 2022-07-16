@@ -13,6 +13,16 @@ jobs:
       contents: write
     steps:
 
+      -  name: Organization introduction
+         uses: lowlighter/metrics@latest
+         with:
+          filename: metrics.plugin.introduction.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: DataCrusade1999
+          base: header
+          plugin_introduction: yes
+
+
       -   name: Midly interesting facts
           uses: lowlighter/metrics@latest
           with:

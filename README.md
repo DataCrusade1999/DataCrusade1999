@@ -2,6 +2,8 @@
 
 ![](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
+![Introduction](./metrics.plugin.introduction.svg)
+
 - 🔭 I’m a Former core team member of [GDSC ABESIT](https://gdsc.community.dev/abes-institute-of-technology-ghaziabad/) and I've spoken at some technical [events](https://bit.ly/3EbGR5w) also and would like to give more to the community feel free to reach out.
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
