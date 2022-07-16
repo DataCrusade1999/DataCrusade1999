@@ -14,8 +14,9 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-![alt joke](./metrics.plugin.screenshot.svg)
+![xkcd](./metrics.plugin.screenshot.svg)
 
+![Programming Habits](./metrics.plugin.habits.facts.svg)
 
 ### 📕📕 Blog posts
 
