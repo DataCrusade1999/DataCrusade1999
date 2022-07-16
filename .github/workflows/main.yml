@@ -12,6 +12,16 @@ jobs:
     permissions:
       contents: write
     steps:
+
+      -   name: Recently starred
+          uses: lowlighter/metrics@latest
+          with:
+            filename: metrics.plugin.stars.svg
+            token: ${{ secrets.METRICS_TOKEN }}
+            base: ""
+            plugin_stars: yes
+            plugin_stars_limit: 4
+
       -   name: Indepth analysis
           uses: lowlighter/metrics@latest
           with:
@@ -98,6 +108,5 @@ jobs:
           plugin_people_limit: 24
           plugin_people_size: 28
           plugin_people_types: followers, following
-          plugin_stars: yes
-          plugin_stars_limit: 4
+
 
