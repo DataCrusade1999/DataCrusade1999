@@ -19,7 +19,7 @@
 ![xkcd](./metrics.plugin.screenshot.svg)
 ![Programming Habits](./metrics.plugin.habits.facts.svg)
 
-### 📕📕 Blog posts
+### 📕📕 Tech Articles
 
 ![Latest Article](./metrics.plugin.posts.full.svg)
 
