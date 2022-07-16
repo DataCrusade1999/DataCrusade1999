@@ -50,7 +50,7 @@ jobs:
           # Options
           user: DataCrusade1999
           template: classic
-          base: header, activity, community, repositories, metadata
+          base:  metadata
           config_timezone: Asia/Calcutta
           plugin_achievements: yes
           plugin_achievements_display: compact
