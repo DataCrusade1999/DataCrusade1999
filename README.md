@@ -2,9 +2,9 @@
 
 ![Visitor Counter](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
-![Introduction](/github-metrics/metrics.plugin.introduction.svg)
+![Introduction](./metrics.plugin.introduction.svg)
 
-![Achievements](/github-metrics/metrics.plugin.achievements.compact.svg)
+![Achievements](./metrics.plugin.achievements.compact.svg)
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
 
@@ -16,8 +16,8 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-![xkcd](/github-metrics/metrics.plugin.screenshot.svg)
-![Programming Habits](/github-metrics/metrics.plugin.habits.facts.svg)
+![xkcd](./metrics.plugin.screenshot.svg)
+![Programming Habits](./metrics.plugin.habits.facts.svg)
 
 ### 📕📕 Blog posts
 
@@ -44,18 +44,18 @@
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
-![Follow-up on Issues and PR's](/github-metrics/metrics.plugin.followup.indepth.svg)
+![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)
 
-![Recent Activity](/github-metrics/metrics.plugin.activity.svg)
+![Recent Activity](./metrics.plugin.activity.svg)
 
-![stackoverflow](/github-metrics/metrics.plugin.stackoverflow.svg)
+![stackoverflow](./metrics.plugin.stackoverflow.svg)
 
-![Discussions](/github-metrics/metrics.plugin.discussions.svg)
+![Discussions](./metrics.plugin.discussions.svg)
 
-![Indepth Analysis](/github-metrics/metrics.plugin.languages.indepth.svg)
+![Indepth Analysis](./metrics.plugin.languages.indepth.svg)
 
-![Notable Contributions](/github-metrics/metrics.plugin.notable.indepth.svg)
+![Notable Contributions](./metrics.plugin.notable.indepth.svg)
 
-![Recent Stars](/github-metrics/metrics.plugin.stars.svg)
+![Recent Stars](./metrics.plugin.stars.svg)
 
-![People](/github-metrics/metrics.plugin.people.repository.svg)
+![People](./metrics.plugin.people.repository.svg)

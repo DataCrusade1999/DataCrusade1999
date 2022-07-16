@@ -16,7 +16,7 @@ jobs:
       -   name: Compact display
           uses: lowlighter/metrics@latest
           with:
-           filename: ../../github-metrics/metrics.plugin.achievements.compact.svg
+           filename: metrics.plugin.achievements.compact.svg
            token: ${{ secrets.METRICS_TOKEN }}
            base: ""
            plugin_achievements: yes
@@ -32,7 +32,7 @@ jobs:
       -   name: Organization introduction
           uses: lowlighter/metrics@latest
           with:
-           filename: ../../github-metrics/metrics.plugin.introduction.svg
+           filename: metrics.plugin.introduction.svg
            token: ${{ secrets.METRICS_TOKEN }}
            user: DataCrusade1999
            base: header
@@ -42,7 +42,7 @@ jobs:
       -   name: Midly interesting facts
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.habits.facts.svg
+            filename: metrics.plugin.habits.facts.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_habits: yes
@@ -54,7 +54,7 @@ jobs:
       -   name: Contributors and sponsors
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.people.repository.svg
+            filename: metrics.plugin.people.repository.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_people: yes
@@ -65,7 +65,7 @@ jobs:
       -   name: Indepth analysis
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.followup.indepth.svg
+            filename: metrics.plugin.followup.indepth.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_followup: yes
@@ -77,7 +77,7 @@ jobs:
       -   name: GitHub Discussions
           uses: lowlighter/metrics@latest
           with:
-           filename: ../../github-metrics/metrics.plugin.discussions.svg
+           filename: metrics.plugin.discussions.svg
            token: ${{ secrets.METRICS_TOKEN }}
            base: ""
            plugin_discussions: yes
@@ -87,7 +87,7 @@ jobs:
       -   name: Indepth analysis for notable repositories
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.notable.indepth.svg
+            filename: metrics.plugin.notable.indepth.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_notable: yes
@@ -100,7 +100,7 @@ jobs:
       -   name: Recently starred
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.stars.svg
+            filename: metrics.plugin.stars.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_stars: yes
@@ -109,7 +109,7 @@ jobs:
       -   name: Indepth analysis for programming languages
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.languages.indepth.svg
+            filename: metrics.plugin.languages.indepth.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_languages: yes
@@ -126,7 +126,7 @@ jobs:
       -   name: Recent activity
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.activity.svg
+            filename: metrics.plugin.activity.svg
             token: ${{ secrets.METRICS_TOKEN }}
             base: ""
             plugin_activity: yes
@@ -139,7 +139,7 @@ jobs:
       -   name: XKCD of the day
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.screenshot.svg
+            filename: metrics.plugin.screenshot.svg
             token: NOT_NEEDED
             base: ""
             plugin_screenshot: yes
@@ -151,7 +151,7 @@ jobs:
       -   name: Top answers from stackoverflow
           uses: lowlighter/metrics@latest
           with:
-            filename: ../../github-metrics/metrics.plugin.stackoverflow.svg
+            filename: metrics.plugin.stackoverflow.svg
             token: NOT_NEEDED
             base: ""
             plugin_stackoverflow: yes
