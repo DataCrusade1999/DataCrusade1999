@@ -63,3 +63,7 @@ jobs:
           plugin_people_types: followers, following
           plugin_stars: yes
           plugin_stars_limit: 4
+          plugin_licenses: yes
+          plugin_licenses_setup: npm ci
+          plugin_licenses_legal: no
+          plugin_licenses_ratio: yes
