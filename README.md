@@ -44,8 +44,6 @@
 
 ![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)
 
-![Recent Activity](./metrics.plugin.activity.svg)
-
 ![stackoverflow](./metrics.plugin.stackoverflow.svg)
 
 ![Discussions](./metrics.plugin.discussions.svg)

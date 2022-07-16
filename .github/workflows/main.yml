@@ -136,19 +136,20 @@ jobs:
             plugin_languages_recent_load: 300
             plugin_languages_sections: most-used
             plugin_languages_threshold: 0%
-
-      -   name: Recent activity
-          uses: lowlighter/metrics@latest
-          with:
-            filename: metrics.plugin.activity.svg
-            token: ${{ secrets.METRICS_TOKEN }}
-            base: ""
-            plugin_activity: yes
-            plugin_activity_days: 14
-            plugin_activity_filter: all
-            plugin_activity_limit: 5
-            plugin_activity_load: 300
-            plugin_activity_visibility: all
+            
+# Recent Activity
+     # -   name: Recent activity
+     #     uses: lowlighter/metrics@latest
+     #     with:
+     #       filename: metrics.plugin.activity.svg
+     #       token: ${{ secrets.METRICS_TOKEN }}
+     #       base: ""
+     #       plugin_activity: yes
+     #       plugin_activity_days: 14
+     #       plugin_activity_filter: all
+     #       plugin_activity_limit: 5
+     #       plugin_activity_load: 300
+     #       plugin_activity_visibility: all
 
       -   name: XKCD of the day
           uses: lowlighter/metrics@latest
