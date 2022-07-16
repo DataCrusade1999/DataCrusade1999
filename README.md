@@ -46,6 +46,8 @@
 
 ![stackoverflow](./metrics.plugin.stackoverflow.svg)
 
+![Discussions](./metrics.plugin.discussions.svg)
+
 ![Indepth Analysis](./metrics.plugin.languages.indepth.svg)
 
 ![Notable Contributions](./metrics.plugin.notable.indepth.svg)
