@@ -27,7 +27,6 @@ jobs:
           # Options
           user: DataCrusade1999
           template: classic
-          repo: metrics
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Calcutta
           plugin_achievements: yes
