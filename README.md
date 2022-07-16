@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&color=FF32D8&background=4AF1E900&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey;I'm+a+Systems+Engineer+and+Technical+Writer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey;I'm+a+Systems+Engineer+and+Technical+Writer)](https://git.io/typing-svg)
 
 ![](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
@@ -13,8 +13,6 @@
 - 💬 Ask me about **Python,C++**
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
-
-- Now Time for a Joke🤣🤣
 
 ![alt joke](./metrics.plugin.screenshot.svg)
 
