@@ -12,7 +12,7 @@
 
 - 💬 Ask me about **Python,C++**
 
-- 📫 [Email] (ashutosh.pandeyhlr007@gmail.com)
+- 📫 [Email me](ashutosh.pandeyhlr007@gmail.com)
 
 ![alt joke](./metrics.plugin.screenshot.svg)
 
