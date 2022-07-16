@@ -16,6 +16,8 @@
 
 ![alt joke](./metrics.plugin.screenshot.svg)
 
+![Recent Activity](./metrics.plugin.activity.svg)
+
 ### 📕📕 Blog posts
 
 <!-- BLOG-POST-LIST:START -->
