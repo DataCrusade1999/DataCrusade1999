@@ -1,12 +1,10 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey;I'm+a+Systems+Engineer+and+Technical+Writer)](https://git.io/typing-svg)
 
-![](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
+![Visitor Counter](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
-![Introduction](./metrics.plugin.introduction.svg)
+![Introduction](/github-metrics/metrics.plugin.introduction.svg)
 
-![Achievements](./metrics.plugin.achievements.compact.svg)
-
-- 🔭 I’m a Former core team member of [GDSC ABESIT](https://gdsc.community.dev/abes-institute-of-technology-ghaziabad/) and I've spoken at some technical [events](https://bit.ly/3EbGR5w) also and would like to give more to the community feel free to reach out.
+![Achievements](/github-metrics/metrics.plugin.achievements.compact.svg)
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
 
@@ -18,9 +16,8 @@
 
 - 📫 How to reach me **ashutosh.pandeyhlr007@gmail.com**
 
-![xkcd](./metrics.plugin.screenshot.svg)
-
-![Programming Habits](./metrics.plugin.habits.facts.svg)
+![xkcd](/github-metrics/metrics.plugin.screenshot.svg)
+![Programming Habits](/github-metrics/metrics.plugin.habits.facts.svg)
 
 ### 📕📕 Blog posts
 
@@ -47,22 +44,18 @@
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
-![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)
+![Follow-up on Issues and PR's](/github-metrics/metrics.plugin.followup.indepth.svg)
 
-![Recent Activity](./metrics.plugin.activity.svg)
+![Recent Activity](/github-metrics/metrics.plugin.activity.svg)
 
-![stackoverflow](./metrics.plugin.stackoverflow.svg)
+![stackoverflow](/github-metrics/metrics.plugin.stackoverflow.svg)
 
-![Discussions](./metrics.plugin.discussions.svg)
+![Discussions](/github-metrics/metrics.plugin.discussions.svg)
 
-![Indepth Analysis](./metrics.plugin.languages.indepth.svg)
+![Indepth Analysis](/github-metrics/metrics.plugin.languages.indepth.svg)
 
-![Notable Contributions](./metrics.plugin.notable.indepth.svg)
+![Notable Contributions](/github-metrics/metrics.plugin.notable.indepth.svg)
 
-![Recent Stars](./metrics.plugin.stars.svg)
+![Recent Stars](/github-metrics/metrics.plugin.stars.svg)
 
-![People](./metrics.plugin.people.repository.svg)
-
-![Metrics](https://metrics.lecoq.io/DataCrusade1999?template=classic&languages=1&stars=1&followup=1&people=1&activity=1&achievements=1&notable=1&discussions=1&base.indepth=false&base.hireable=false&languages.limit=8&languages.threshold=0%25&languages.other=false&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&stars.limit=4&followup.sections=repositories&followup.indepth=false&followup.archived=true&people.limit=24&people.identicons=false&people.identicons.hide=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&activity.limit=5&activity.load=300&activity.days=14&activity.visibility=all&activity.timestamps=false&activity.filter=all&achievements.threshold=C&achievements.secrets=true&achievements.display=compact&achievements.limit=0&notable.from=organization&notable.repositories=false&notable.indepth=false&notable.types=commit&discussions.categories=true&discussions.categories.limit=0&config.timezone=Asia%2FCalcutta)
-
-
+![People](/github-metrics/metrics.plugin.people.repository.svg)
