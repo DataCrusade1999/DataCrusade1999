@@ -1,4 +1,4 @@
-<h6 align="left"><img src="Header.svg" alt="Header.svg"/></h6>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&color=FF32D8&background=4AF1E900&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey;I'm+a+Systems+Engineer+and+Technical+Writer)](https://git.io/typing-svg)
 
 ![](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
@@ -47,6 +47,6 @@
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DataCrusade1999)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DataCrusade1999&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+![](./profile-3d-contrib/profile-green-animate.svg)
 
 <a href="https://www.digitalocean.com/?refcode=167621bee18a&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" /></a>
