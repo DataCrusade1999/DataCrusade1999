@@ -16,6 +16,7 @@
 
 - Now Time for a Joke🤣🤣
 
+![alt joke](./metrics.plugin.screenshot.svg)
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 ### 📕📕 Blog posts
