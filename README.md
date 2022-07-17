@@ -56,6 +56,6 @@
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
-## People
-
-![People](./metrics.plugin.people.repository.svg)
+| People      | 👨‍💻 Lines of code changed |
+| :----: | :----: |
+| ![People](./metrics.plugin.people.repository.svg)      | ![Lines Changed](./metrics.plugin.lines.svg)       |
