@@ -1,4 +1,4 @@
-# Hi👋, Welcome to my github profile
+# Hi👋, Welcome to My Github Profile
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey;I'm+a+Systems+Engineer+and+Technical+Writer)](https://git.io/typing-svg)
 
