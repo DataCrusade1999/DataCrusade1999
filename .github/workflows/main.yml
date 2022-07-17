@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_code: yes
-          plugin_code_languages: javascript, typescript, python
+          plugin_code_languages: javascript, typescript, python, markdown
           plugin_code_load: 400
 
       - name: Recent posts with descriptions and cover images
