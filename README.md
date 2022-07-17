@@ -60,4 +60,6 @@
 | :----: | :----: |
 | ![People](./metrics.plugin.people.repository.svg)      |  ![Wakatime](./metrics.plugin.wakatime.svg)      |
 
+## Repository Info
+
 ![Lines Changed](./metrics.plugin.lines.svg)
