@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Codesnippet
+name: Recent posts with descriptions and cover images
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,12 +12,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: JavaScript or TypeScript snippet of the day
+      - name: Recent posts with descriptions and cover images
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.code.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.plugin.posts.full.svg
+          token: NOT_NEEDED
           base: ""
-          plugin_code: yes
-          plugin_code_languages: javascript, typescript, python, markdown
-          plugin_code_load: 400
+          plugin_posts: yes
+          plugin_posts_user: datacrusade1999
+          plugin_posts_source: dev.to
+          plugin_posts_limit: 2
+          plugin_posts_descriptions: yes
+          plugin_posts_covers: yes

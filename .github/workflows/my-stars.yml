@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Codesnippet
+name: Recently Starred Repo
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,12 +12,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: JavaScript or TypeScript snippet of the day
+      - name: Recently starred
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.code.svg
+          filename: metrics.plugin.stars.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_code: yes
-          plugin_code_languages: javascript, typescript, python, markdown
-          plugin_code_load: 400
+          plugin_stars: yes
+          plugin_stars_limit: 4

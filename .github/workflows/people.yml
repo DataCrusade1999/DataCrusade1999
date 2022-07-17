@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Codesnippet
+name: People
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,12 +12,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: JavaScript or TypeScript snippet of the day
+      - name: Contributors and sponsors
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.code.svg
+          filename: metrics.plugin.people.repository.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_code: yes
-          plugin_code_languages: javascript, typescript, python, markdown
-          plugin_code_load: 400
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 50
+          plugin_people_size: 50

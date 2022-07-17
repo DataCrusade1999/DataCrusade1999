@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Codesnippet
+name: Notable Repositories
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,12 +12,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: JavaScript or TypeScript snippet of the day
+      - name: Indepth analysis for notable repositories
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.code.svg
+          filename: metrics.plugin.notable.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_code: yes
-          plugin_code_languages: javascript, typescript, python, markdown
-          plugin_code_load: 400
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit
