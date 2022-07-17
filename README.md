@@ -46,7 +46,11 @@
 
 ## Stackoverflow
 
-![stackoverflow](./metrics.plugin.stackoverflow.svg)
+![Stackoverflow](./metrics.plugin.stackoverflow.svg)
+
+| Stackoverflow      | Notable Contribution |
+| :----: | :----: |
+| ![Stackoverflow](./metrics.plugin.stackoverflow.svg)      | ![Notable Contributions](./metrics.plugin.notable.indepth.svg)       |
 
 | Discussions      | Most Used Languages |
 | :----: | :----: |
