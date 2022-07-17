@@ -27,7 +27,7 @@
 
 [![Spotify](https://novatorem-omega-one.vercel.app/api/spotify)](https://open.spotify.com/user/https://novatorem-omega-one.vercel.app)
 
-# Connect with me
+## Connect with me
 
 <p align="left">
 <a href="https://dev.to/datacrusade1999" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="https://dev.to/datacrusade1999" height="30" width="40" /></a>
@@ -38,9 +38,9 @@
 <a href="https://medium.com/@ashutosh.pandeyhlr007" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg" alt="@ashutosh.pandeyhlr007" height="30" width="40" /></a>
 </p>
 
-# Languages and Tools
+## Languages and Tools
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,aws,gcp,docker,py,nextjs,tensorflow,pytorch,react,bash,django,git,vim,linux)](https://skillicons.dev)
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
