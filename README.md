@@ -6,9 +6,9 @@
 
 <a href="https://app.daily.dev/DataCrusade1999"><img src="https://github.com/DataCrusade1999/DataCrusade1999/blob/master/devcard.svg" width="300" alt="Ashutosh's Dev Card" align="right"/></a>
 
-![Introduction](./metrics.plugin.introduction.svg)
+![ 🙋 Introduction](./metrics.plugin.introduction.svg)
 
-![Achievements](./metrics.plugin.achievements.compact.svg)
+![ 🏆 Achievements](./metrics.plugin.achievements.compact.svg)
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
 
@@ -22,11 +22,11 @@
 
 ![xkcd](./metrics.plugin.screenshot.svg)
 
-| My Programming Habits      | Follow-up on Issues and PR's |
+| 💡 My Programming Habits      | 🎟️ Follow-up on Issues and PR's |
 | :----: | :----: |
 | ![Programming Habits](./metrics.plugin.habits.facts.svg)      |   ![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)    |
 
-## 📕📕 Tech Articles
+## ✒️ Tech Articles
 
 ![Latest Article](./metrics.plugin.posts.full.svg)
 
@@ -44,18 +44,18 @@
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
-| Stackoverflow      | Notable Contribution |
+| 💬 Stackoverflow      | 🎩 Notable Contribution |
 | :----: | :----: |
 | ![Stackoverflow](./metrics.plugin.stackoverflow.svg)      | ![Notable Contributions](./metrics.plugin.notable.indepth.svg)       |
 
-| Discussions      | Most Used Languages |
+| 💬 Discussions      | 🈷️ Most Used Languages |
 | :----: | :----: |
 | ![Discussions](./metrics.plugin.discussions.svg)      | ![Indepth Analysis](./metrics.plugin.languages.indepth.svg)       |
 
-| Recent Stars      | Comments Reaction |
+| 🌟 Recent Stars      | 🎭 Comments Reaction |
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
-| People      | 👨‍💻 Lines of code changed |
+| 🧑‍🤝‍🧑 People      | 👨‍💻 Lines of code changed |
 | :----: | :----: |
 | ![People](./metrics.plugin.people.repository.svg)      | ![Lines Changed](./metrics.plugin.lines.svg)       |
