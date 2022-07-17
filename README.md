@@ -59,3 +59,5 @@
 | 🧑‍🤝‍🧑 People      | 👨‍💻 Lines of code changed |
 | :----: | :----: |
 | ![People](./metrics.plugin.people.repository.svg)      | ![Lines Changed](./metrics.plugin.lines.svg)       |
+
+![Wakatime](./metrics.plugin.wakatime.svg)
