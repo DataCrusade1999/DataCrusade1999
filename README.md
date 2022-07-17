@@ -22,9 +22,13 @@
 
 ![xkcd](./metrics.plugin.screenshot.svg)
 
-| My Programming Habits      | 📕📕 Tech Articles |
+## 📕📕 Tech Articles
+
+![Latest Article](./metrics.plugin.posts.full.svg)
+
+| My Programming Habits      | Follow-up on Issues and PR's |
 | :----: | :----: |
-| ![Programming Habits](./metrics.plugin.habits.facts.svg)      | ![Latest Article](./metrics.plugin.posts.full.svg)       |
+| ![Programming Habits](./metrics.plugin.habits.facts.svg)      |   ![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)    |
 
 ## 🎧🎧 Listening To
 
@@ -39,10 +43,6 @@
 [![My Skills](https://skillicons.dev/icons?i=js,aws,gcp,docker,py,nextjs,tensorflow,pytorch,react,bash,django,git,vim,linux)](https://skillicons.dev)
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
-
-## Follow-up on Issues and PR's
-
-![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)
 
 ## Stackoverflow
 
