@@ -56,8 +56,8 @@
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
-| 🧑‍🤝‍🧑 People      | 👨‍💻 Lines of code changed |
+| 🧑‍🤝‍🧑 People      | ⏰ Wakatime |
 | :----: | :----: |
-| ![People](./metrics.plugin.people.repository.svg)      | ![Lines Changed](./metrics.plugin.lines.svg)       |
+| ![People](./metrics.plugin.people.repository.svg)      |  ![Wakatime](./metrics.plugin.wakatime.svg)      |
 
-![Wakatime](./metrics.plugin.wakatime.svg)
+![Lines Changed](./metrics.plugin.lines.svg)
