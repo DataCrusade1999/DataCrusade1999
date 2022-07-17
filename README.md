@@ -71,3 +71,7 @@
 ## People
 
 ![People](./metrics.plugin.people.repository.svg)
+
+## Code
+
+![something](./metrics.plugin.code.svg)
