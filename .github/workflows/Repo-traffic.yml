@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Codesnippet
+name: Repositories Traffic
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,10 +12,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: GitHub Community Support
+      - name: Repositories traffic
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.support.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_support: yes
+          filename: metrics.plugin.traffic.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: repositories
+          plugin_traffic: yes

@@ -56,14 +56,12 @@
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
-| 🧑‍🤝‍🧑 People      | 💭 GitHub Community Support |
+| 🧑‍🤝‍🧑 People      | 🧮 Repositories traffic |
 | :----: | :----: |
-| ![People](./metrics.plugin.people.repository.svg)      |   ![Github Community Support](./metrics.plugin.support.svg)    |
+| ![People](./metrics.plugin.people.repository.svg)      |   ![Repo-Traffic](./metrics.plugin.traffic.svg)    |
 
 ## Repository Info
 
 ![Lines Changed](./metrics.plugin.lines.svg)
 
-[comment]: <> (![Wakatime](./metrics.plugin.wakatime.svg))
-[comment]: <> (in  the output file unless you use it in)
-[comment]: <> (a reference style link.)
+<!--![Wakatime](./metrics.plugin.wakatime.svg)-->
