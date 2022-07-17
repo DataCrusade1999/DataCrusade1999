@@ -2,7 +2,7 @@
 name: Codesnippet
 on:
   # Schedule updates (each hour)
-  schedule: [{ cron: "0 0 * * *" }]
+  schedule: [{ cron: "0 0 1 1 0" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: { branches: ["master", "main"] }

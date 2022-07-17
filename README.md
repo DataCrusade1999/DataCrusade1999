@@ -66,7 +66,7 @@
 
 | Recent Stars      | License |
 | :----:      | :----: |
-| ![Recent Stars](./metrics.plugin.stars.svg)      | ![License Overview](./metrics.plugin.licenses.ratio.svg)       |
+| ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
 ## People
 
