@@ -4,9 +4,9 @@
 
 ![Visitor Counter](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
-![Introduction](./metrics.plugin.introduction.svg)
-
 <a href="https://app.daily.dev/DataCrusade1999"><img src="https://github.com/DataCrusade1999/DataCrusade1999/blob/master/devcard.svg" width="300" alt="Ashutosh's Dev Card" align="right"/></a>
+
+![Introduction](./metrics.plugin.introduction.svg)
 
 ![Achievements](./metrics.plugin.achievements.compact.svg)
 
