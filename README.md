@@ -44,10 +44,6 @@
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
-## Stackoverflow
-
-![Stackoverflow](./metrics.plugin.stackoverflow.svg)
-
 | Stackoverflow      | Notable Contribution |
 | :----: | :----: |
 | ![Stackoverflow](./metrics.plugin.stackoverflow.svg)      | ![Notable Contributions](./metrics.plugin.notable.indepth.svg)       |
@@ -55,10 +51,6 @@
 | Discussions      | Most Used Languages |
 | :----: | :----: |
 | ![Discussions](./metrics.plugin.discussions.svg)      | ![Indepth Analysis](./metrics.plugin.languages.indepth.svg)       |
-
-## Notable Contribution
-
-![Notable Contributions](./metrics.plugin.notable.indepth.svg)
 
 | Recent Stars      | Comments Reaction |
 | :----:      | :----: |
