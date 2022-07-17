@@ -22,13 +22,9 @@
 
 ![xkcd](./metrics.plugin.screenshot.svg)
 
-## My Programming Habits
-
-![Programming Habits](./metrics.plugin.habits.facts.svg)
-
-## 📕📕 Tech Articles
-
-![Latest Article](./metrics.plugin.posts.full.svg)
+| My Programming Habits      | 📕📕 Tech Articles |
+| :----: | :----: |
+| ![Programming Habits](./metrics.plugin.habits.facts.svg)      | ![Latest Article](./metrics.plugin.posts.full.svg)       |
 
 ## 🎧🎧 Listening To
 
