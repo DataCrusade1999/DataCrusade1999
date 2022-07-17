@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: WakaTime
+name: Codesnippet
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,14 +12,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: WakaTime
+      - name: GitHub Community Support
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.wakatime.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.plugin.support.svg
+          token: NOT_NEEDED
           base: ""
-          plugin_wakatime: yes
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_user: DataCrusade1999
-          plugin_wakatime_days: 7
+          plugin_support: yes
