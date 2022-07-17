@@ -6,7 +6,7 @@
 
 ![Introduction](./metrics.plugin.introduction.svg)
 
-![Ashutosh's Devcard](./devcard.svg)
+<a href="https://app.daily.dev/DataCrusade1999"><img src="https://github.com/DataCrusade1999/DataCrusade1999/blob/master/devcard.svg" width="400" alt="Ashutosh's Dev Card" align="right"/></a>
 
 ![Achievements](./metrics.plugin.achievements.compact.svg)
 
