@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Repositories Traffic
+name: Stock Price
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 0 * * *" }]
@@ -12,10 +12,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Repositories traffic
+      - name: Stock prices from Tesla
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.traffic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: repositories
-          plugin_traffic: yes
+          filename: metrics.plugin.stock.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_stock: yes
+          plugin_stock_token: ${{ secrets.STOCK_TOKEN }}
+          plugin_stock_symbol: TSLA

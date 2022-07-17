@@ -56,12 +56,10 @@
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
-| 🧑‍🤝‍🧑 People      | 🧮 Repositories traffic |
+| 🧑‍🤝‍🧑 People      | 💹 Stock prices |
 | :----: | :----: |
-| ![People](./metrics.plugin.people.repository.svg)      |   ![Repo-Traffic](./metrics.plugin.traffic.svg)    |
+| ![People](./metrics.plugin.people.repository.svg)      |   ![Stock Prices](./metrics.plugin.stock.svg)   |
 
-## Repository Info
-
-![Lines Changed](./metrics.plugin.lines.svg)
+<!--[Lines Changed](./metrics.plugin.lines.svg)-->
 
 <!--![Wakatime](./metrics.plugin.wakatime.svg)-->
