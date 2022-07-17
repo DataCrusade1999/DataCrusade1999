@@ -22,13 +22,13 @@
 
 ![xkcd](./metrics.plugin.screenshot.svg)
 
-## 📕📕 Tech Articles
-
-![Latest Article](./metrics.plugin.posts.full.svg)
-
 | My Programming Habits      | Follow-up on Issues and PR's |
 | :----: | :----: |
 | ![Programming Habits](./metrics.plugin.habits.facts.svg)      |   ![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)    |
+
+## 📕📕 Tech Articles
+
+![Latest Article](./metrics.plugin.posts.full.svg)
 
 ## 🎧🎧 Listening To
 
