@@ -52,19 +52,15 @@
 
 ![stackoverflow](./metrics.plugin.stackoverflow.svg)
 
-## Discussions
-
-![Discussions](./metrics.plugin.discussions.svg)
-
-## Most Used Languages
-
-![Indepth Analysis](./metrics.plugin.languages.indepth.svg)
+| Discussions      | Most Used Languages |
+| :----: | :----: |
+| ![Discussions](./metrics.plugin.discussions.svg)      | ![Indepth Analysis](./metrics.plugin.languages.indepth.svg)       |
 
 ## Notable Contribution
 
 ![Notable Contributions](./metrics.plugin.notable.indepth.svg)
 
-| Recent Stars      | License |
+| Recent Stars      | Comments Reaction |
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
