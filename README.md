@@ -64,14 +64,10 @@
 
 ![Notable Contributions](./metrics.plugin.notable.indepth.svg)
 
-## Recent Stars
-
-![Recent Stars](./metrics.plugin.stars.svg)
+| Recent Stars      | License |
+| :----:      | :----: |
+| ![Recent Stars](./metrics.plugin.stars.svg)      | ![License Overview](./metrics.plugin.licenses.ratio.svg)       |
 
 ## People
 
 ![People](./metrics.plugin.people.repository.svg)
-
-## Code
-
-![something](./metrics.plugin.code.svg)
