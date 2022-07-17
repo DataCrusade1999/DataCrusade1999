@@ -56,9 +56,9 @@
 | :----:      | :----: |
 | ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
 
-| 🧑‍🤝‍🧑 People      | 💹 Stock prices |
-| :----: | :----: |
-| ![People](./metrics.plugin.people.repository.svg)      |   ![Stock Prices](./metrics.plugin.stock.svg)   |
+## 🧑‍🤝‍🧑 People  
+
+![People](./metrics.plugin.people.repository.svg)
 
 <!--[Lines Changed](./metrics.plugin.lines.svg)-->
 
