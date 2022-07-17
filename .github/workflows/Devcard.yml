@@ -18,4 +18,5 @@ jobs:
       - name: devcard
         uses: dailydotdev/action-devcard@2.0.2
         with:
+          filename: devcard.svg
           devcard_id: ${{ secrets.DEVCARD_ID }}
