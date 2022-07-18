@@ -36,7 +36,36 @@
 
 ## Connect with me
 
-[![My Skills](https://skillicons.dev/icons?i=instagram,linkedin,twitter)](https://skillicons.dev)
+<span>
+ <a href="https://www.instagram.com/ashutosh_pandey1999/">
+ <img src="./icons8-instagram-50.svg">
+ </a>
+</span>
+<span>
+ <a href="https://www.linkedin.com/in/ashutosh-pandey-25bbba15b/">
+ <img src="./icons8-linkedin-50.svg">
+ </a>
+ </span>
+<span>
+ <a href="https://twitter.com/DataCrusade1999">
+ <img src="./icons8-twitter-50.svg">
+ </a>
+ </span>
+<span>
+ <a href="https://www.reddit.com/user/DataCrusade1999">
+ <img src="./icons8-reddit-50.svg">
+ </a>
+ </span>
+<span>
+ <a href="https://stackoverflow.com/users/13128057/datacrusade1999?tab=profile">
+ <img src="./icons8-stack-overflow-50.svg">
+ </a>
+ </span>
+ <span>
+ <a href="https://dev.to/datacrusade1999">
+ <img src="./dev-to.png">
+ </a>
+</span>
 
 ## Languages and Tools
 
@@ -63,3 +92,5 @@
 <!--[Lines Changed](./metrics.plugin.lines.svg)-->
 
 <!--![Wakatime](./metrics.plugin.wakatime.svg)-->
+
+![Insta](./icons8-reddit-50.svg)
