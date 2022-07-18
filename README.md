@@ -34,7 +34,7 @@
 
 [![Spotify](https://novatorem-omega-one.vercel.app/api/spotify)](https://open.spotify.com/user/https://novatorem-omega-one.vercel.app)
 
-## Connect with me
+## 🔗 Connect with me
 
 <span>
  <a href="https://www.instagram.com/ashutosh_pandey1999/">
@@ -67,7 +67,7 @@
  </a>
 </span>
 
-## Languages and Tools
+## 🛠️ Languages and Tools
 
 [![My Skills](https://skillicons.dev/icons?i=js,aws,gcp,docker,py,nextjs,tensorflow,pytorch,react,bash,django,git,vim,linux)](https://skillicons.dev)
 
