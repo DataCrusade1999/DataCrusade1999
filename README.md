@@ -92,5 +92,4 @@
 <!--[Lines Changed](./metrics.plugin.lines.svg)-->
 
 <!--![Wakatime](./metrics.plugin.wakatime.svg)-->
-
-![Insta](./icons8-reddit-50.svg)
+![Wakatime](./metrics.plugin.wakatime.svg)
