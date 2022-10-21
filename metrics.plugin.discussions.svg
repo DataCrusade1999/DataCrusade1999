@@ -47,8 +47,9 @@
                     <section>
                         <div class="field wrap">
                             <div class="label label-flex">💬 General <div class="label-right">11</div></div>
-                            <div class="label label-flex">🙏 Q&amp;A <div class="label-right">3</div></div>
+                            <div class="label label-flex">🙏 Q&amp;A <div class="label-right">2</div></div>
                             <div class="label label-flex">📣 Announcements <div class="label-right">1</div></div>
+                            <div class="label label-flex">🤔 Troubleshoot <div class="label-right">1</div></div>
                         </div>
                     </section>
                 </div>
