@@ -1,0 +1,89 @@
+From e34cfdae3ccb21cb617ac6e188439b7fe1602ad3 Mon Sep 17 00:00:00 2001
+From: Ashutosh Pandey <ashutosh.pandeyhlr007@gmail.com>
+Date: Mon, 16 Jan 2023 22:44:55 +0530
+Subject: [PATCH] feat: added license and twitter cards
+
+---
+ .github/workflows/license.yml | 25 +++++++++++++++++++++++++
+ .github/workflows/twitter.yml | 24 ++++++++++++++++++++++++
+ README.md                     |  4 ++++
+ 3 files changed, 53 insertions(+)
+ create mode 100644 .github/workflows/license.yml
+ create mode 100644 .github/workflows/twitter.yml
+
+diff --git a/.github/workflows/license.yml b/.github/workflows/license.yml
+new file mode 100644
+index 0000000..ca03ccb
+--- /dev/null
++++ b/.github/workflows/license.yml
+@@ -0,0 +1,25 @@
++# Visit https://github.com/lowlighter/metrics#-documentation for full reference
++name: Licenses
++on:
++  schedule: [{ cron: "0 0 1 1 0" }]
++  # Lines below let you run workflow manually and on each commit
++  workflow_dispatch:
++    branches: ["master", "main"]
++jobs:
++  github-metrics:
++    runs-on: ubuntu-latest
++    permissions:
++      contents: write
++    steps:
++      - name: Licenses with open-source ratio graphs
++        uses: lowlighter/metrics@latest
++        with:
++          filename: metrics.plugin.licenses.ratio.svg
++          token: ${{ secrets.METRICS_TOKEN }}
++          base: ""
++          template: repository
++          repo: metrics
++          plugin_licenses: yes
++          plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
++          plugin_licenses_legal: no
++          plugin_licenses_ratio: yes
+diff --git a/.github/workflows/twitter.yml b/.github/workflows/twitter.yml
+new file mode 100644
+index 0000000..101b976
+--- /dev/null
++++ b/.github/workflows/twitter.yml
+@@ -0,0 +1,24 @@
++# Visit https://github.com/lowlighter/metrics#-documentation for full reference
++name: Twitter
++on:
++  schedule: [{ cron: "0 0 1 1 0" }]
++  # Lines below let you run workflow manually and on each commit
++  workflow_dispatch:
++    branches: ["master", "main"]
++jobs:
++  github-metrics:
++    runs-on: ubuntu-latest
++    permissions:
++      contents: write
++    steps:
++      - name: Latest tweets including attachments
++        uses: lowlighter/metrics@latest
++        with:
++          filename: metrics.plugin.tweets.attachments.svg
++          token: NOT_NEEDED
++          base: ""
++          plugin_tweets: yes
++          plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
++          plugin_tweets_attachments: yes
++          plugin_tweets_user: github
++          plugin_tweets_limit: 1
+diff --git a/README.md b/README.md
+index 35378a8..7ccaf2f 100644
+--- a/README.md
++++ b/README.md
+@@ -88,3 +88,7 @@
+ | 🧑‍🤝‍🧑 People      | ⏰ Wakatime |
+ | :----: | :----: |
+ | ![People](./metrics.plugin.people.repository.svg)      | ![Wakatime](./metrics.plugin.wakatime.svg)       |
++
++| 📜 License      | 🐤 Twitter |
++|   :---:       |    :----:   |
++| ![License](./metrics.plugin.licenses.ratio.svg)      | ![Twitter](./metrics.plugin.tweets.attachments.svg)       |
+-- 
+2.38.1.windows.1
+
