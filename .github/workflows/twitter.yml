@@ -1,10 +1,11 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Twitter
 on:
-  schedule: [{ cron: "0 0 1 1 0" }]
+  # Schedule updates (At 12:30AM Every Night)
+  schedule: [{ cron: "30 0 * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-    branches: ["master", "main"]
+    push: { branches: ["master", "main"] }
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
