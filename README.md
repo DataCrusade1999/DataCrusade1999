@@ -89,6 +89,6 @@
 | :----: | :----: |
 | ![People](./metrics.plugin.people.repository.svg)      | ![Wakatime](./metrics.plugin.wakatime.svg)       |
 
-| 📜 License      | 🐤 Twitter |
-|   :---:       |    :----:   |
-| ![License](./metrics.plugin.licenses.ratio.svg)      | ![Twitter](./metrics.plugin.tweets.attachments.svg)       |
+| 🐤 Twitter |
+|    :----:   |
+| ![Twitter](./metrics.plugin.tweets.attachments.svg)       |
