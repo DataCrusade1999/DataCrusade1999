@@ -2,7 +2,7 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   # Schedule updates (At 12:30AM Every Night)
-  schedule: [{ cron: "30 0 * * *" }]
+  schedule: [{ cron: "59 0 * * *" }]
   workflow_dispatch:
 
 jobs:
@@ -19,6 +19,8 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git remote add origin https://github.com/DataCrusade1999/DataCrusade1999.git
+          git pull origin master
           git add -A .
           git commit -m "generated"
           git push
