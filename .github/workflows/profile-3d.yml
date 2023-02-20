@@ -19,7 +19,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git remote add origin https://github.com/DataCrusade1999/DataCrusade1999.git
           git pull origin master
           git add -A .
           git commit -m "generated"
