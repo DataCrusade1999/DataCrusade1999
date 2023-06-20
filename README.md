@@ -22,9 +22,9 @@
 
 ![xkcd](./metrics.plugin.screenshot.svg)
 
-| 💡 My Programming Habits      | 🎟️ Follow-up on Issues and PR's |
-| :----: | :----: |
-| ![Programming Habits](./metrics.plugin.habits.facts.svg)      |   ![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg)    |
+|                 💡 My Programming Habits                 |                    🎟️ Follow-up on Issues and PR's                     |
+| :------------------------------------------------------: | :--------------------------------------------------------------------: |
+| ![Programming Habits](./metrics.plugin.habits.facts.svg) | ![Follow-up on Issues and PR's](./metrics.plugin.followup.indepth.svg) |
 
 ## ✒️ Tech Articles
 
@@ -73,18 +73,18 @@
 
 ![commit-graph](./profile-3d-contrib/profile-south-season-animate.svg)
 
-| 💬 Stackoverflow      | 🎩 Notable Contribution |
-| :----: | :----: |
-| ![Stackoverflow](./metrics.plugin.stackoverflow.svg)      | ![Notable Contributions](./metrics.plugin.notable.indepth.svg)       |
+|                   💬 Stackoverflow                   |                    🎩 Notable Contribution                     |
+| :--------------------------------------------------: | :------------------------------------------------------------: |
+| ![Stackoverflow](./metrics.plugin.stackoverflow.svg) | ![Notable Contributions](./metrics.plugin.notable.indepth.svg) |
 
-| 💬 Discussions      | 🈷️ Most Used Languages |
-| :----: | :----: |
-| ![Discussions](./metrics.plugin.discussions.svg)      | ![Indepth Analysis](./metrics.plugin.languages.indepth.svg)       |
+|                  💬 Discussions                  |                   🈷️ Most Used Languages                    |
+| :----------------------------------------------: | :---------------------------------------------------------: |
+| ![Discussions](./metrics.plugin.discussions.svg) | ![Indepth Analysis](./metrics.plugin.languages.indepth.svg) |
 
-| 🌟 Recent Stars      | 🎭 Comments Reaction |
-| :----:      | :----: |
-| ![Recent Stars](./metrics.plugin.stars.svg)      | ![Comments Reactions](./metrics.plugin.reactions.svg)       |
+|               🌟 Recent Stars               |                 🎭 Comments Reaction                  |
+| :-----------------------------------------: | :---------------------------------------------------: |
+| ![Recent Stars](./metrics.plugin.stars.svg) | ![Comments Reactions](./metrics.plugin.reactions.svg) |
 
-| 🧑‍🤝‍🧑 People      | ⏰ Wakatime |
-| :----: | :----: |
-| ![People](./metrics.plugin.people.repository.svg)      | ![Wakatime](./metrics.plugin.wakatime.svg)       |
+|                     🧑‍🤝‍🧑 People                     |                ⏰ Wakatime                 |
+| :-----------------------------------------------: | :----------------------------------------: |
+| ![People](./metrics.plugin.people.repository.svg) | ![Wakatime](./metrics.plugin.wakatime.svg) |
