@@ -88,7 +88,3 @@
 | 🧑‍🤝‍🧑 People      | ⏰ Wakatime |
 | :----: | :----: |
 | ![People](./metrics.plugin.people.repository.svg)      | ![Wakatime](./metrics.plugin.wakatime.svg)       |
-
-| 🐤 Twitter |
-|    :----:   |
-| ![Twitter](./metrics.plugin.tweets.attachments.svg)       |
