@@ -12,7 +12,7 @@
 
 - 🌱 I’m interested in **Machine Learning and Web Development**
 
-- 👨‍💻 My portfolio website is [here](https://ashutoshpandey.live/)
+- 👨‍💻 My portfolio website is [here](https://ashutosh-pandey.is-a.dev/)
 
 - 📝 I occasionally write articles on [Medium](https://medium.com/@ashutosh.pandeyhlr007)
 
