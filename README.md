@@ -32,7 +32,7 @@
 
 ## 🎧🎧 Listening To
 
-[![Spotify](https://novatorem-omega-one.vercel.app/api/spotify)](https://open.spotify.com/user/https://novatorem-omega-one.vercel.app)
+![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=5n2bcwz8z1ow9ew8oc0oavrh9&width=600)
 
 ## 🔗 Connect with me
 
