@@ -1,6 +1,6 @@
 # Hi👋, Welcome to My Github Profile
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey.;I'm+a+Web+Developer+and+a+Technical+Writer.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik+Moonrocks&size=60&center=true&vCenter=true&width=1500&height=300&lines=Hi%2C+I'm+Ashutosh+Pandey.)](https://git.io/typing-svg)
 
 ![Visitor Counter](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
