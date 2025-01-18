@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="154" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="204" class="">
     <defs>
         <style/>
     </defs>
@@ -22,11 +22,14 @@
                             github
                         </div>
                         <div class="tweet">
-                            Here's how we built the GitHub Skyline CLI extension using GitHub 🏙️
+                            Linux arm64 hosted runners are available in preview in public repositories 🙌  Build, test, and deploy entirely within arm64 architecture.
                             <br />
                             <br />
-                            <a href="https://t.co/t5MBxs5K1C" class="link">github.blog/developer-skil…</a>
-                            <div class="date">00:09:00 on 17 Jan 2025</div>
+                            Get started now 👇
+                            <br />
+                            <br />
+                            <a href="https://t.co/LKk8iyBCVG" class="link">github.blog/changelog/2025…</a>
+                            <div class="date">01:50:00 on 18 Jan 2025</div>
                         </div>
                     </section>
                 </div>
