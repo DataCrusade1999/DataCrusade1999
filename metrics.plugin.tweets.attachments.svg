@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="155" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="237" class="">
     <defs>
         <style/>
     </defs>
@@ -22,11 +22,20 @@
                             github
                         </div>
                         <div class="tweet">
-                            Git 2.48 is here ✨
+                            📣 New GitHub Issues updates! 📣
                             <br />
                             <br />
-                            <a href="https://t.co/j3OhKL2gLI" class="link">github.blog/open-source/gi…</a>
-                            <div class="date">17:12:01 on 19 Jan 2025</div>
+                            - Break down and nest issues with sub-issues
+                            <br />
+                            - Better organize with issue types
+                            <br />
+                            - A more advanced issues search
+                            <br />
+                            <br />
+                            💭 Learn more:
+                            <br />
+                            <a href="https://t.co/7fSl5j729h" class="link">github.blog/changelog/2025…</a>
+                            <div class="date">23:01:00 on 21 Jan 2025</div>
                         </div>
                     </section>
                 </div>
