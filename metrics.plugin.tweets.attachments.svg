@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="171" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="257" class="">
     <defs>
         <style/>
     </defs>
@@ -22,11 +22,21 @@
                             github
                         </div>
                         <div class="tweet">
-                            If you're an Eclipse user, GitHub Copilot code completion is now available for you 🎉
+                            ✅ Code completions
+                            <br />
+                            ✅ Inline chat
+                            <br />
+                            ✅ Slash commands
                             <br />
                             <br />
-                            <a href="https://t.co/DcyuGm4tQK" class="link">github.blog/changelog/2025…</a>
-                            <div class="date">14:20:00 on 16 Mar 2025</div>
+                            Take your code to the next level with GitHub Copilot. 💯
+                            <br />
+                            <br />
+                            Learn more in the latest episode of GitHub for Beginners. 📺
+                            <br />
+                            <br />
+                            <a href="https://t.co/sOvQCkSLys" class="link">github.blog/ai-and-ml/gith…</a>
+                            <div class="date">21:34:00 on 17 Mar 2025</div>
                         </div>
                     </section>
                 </div>
