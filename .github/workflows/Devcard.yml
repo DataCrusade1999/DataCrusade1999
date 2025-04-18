@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: devcard
-        uses: dailydotdev/action-devcard@3.2.0
+        uses: dailydotdev/action-devcard@3.2.1
         with:
           #filename: devcard.svg
           devcard_id: ${{ secrets.DEVCARD_ID }}
