@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="171" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="254" class="">
     <defs>
         <style/>
     </defs>
@@ -22,11 +22,17 @@
                             github
                         </div>
                         <div class="tweet">
-                            Tired of security tools interrupting your flow? 😤 Learn how GitHub can help you integrate security without the hassle.
+                            Are you using the right AI for the job? 🤔
                             <br />
                             <br />
-                            <a href="https://t.co/DdvxQz4SKM" class="link">github.blog/security/appli…</a>
-                            <div class="date">01:59:00 on 20 Apr 2025</div>
+                            Different models for GitHub Copilot excel at different things—like speed, power, and image input.
+                            <br />
+                            <br />
+                            We break down when to use GPT-4o, Claude, Gemini, and more to optimize your workflow. 💻
+                            <br />
+                            <br />
+                            <a href="https://t.co/ny3OMZyypI" class="link">docs.github.com/en/copilot/usi…</a>
+                            <div class="date">21:15:00 on 21 Apr 2025</div>
                         </div>
                     </section>
                 </div>
