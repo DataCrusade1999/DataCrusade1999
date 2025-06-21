@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="121" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="154" class="">
     <defs>
         <style/>
     </defs>
@@ -22,8 +22,15 @@
                             github
                         </div>
                         <div class="tweet">
-                            <span class="mention">@preetsuthar17</span>
-                            <div class="date">20:50:56 on 19 Jun 2025</div>
+                            RT
+                            <span class="mention">@tamstar1234</span>
+                            : Introducing
+                            <span class="mention">@github</span>
+                            Copilot Usage Metrics Viewer!
+                            <br />
+                            <br />
+                            📊 Visualise Copilot usage &amp; analytics instantly - right in your browse…
+                            <div class="date">00:26:31 on 21 Jun 2025</div>
                         </div>
                     </section>
                 </div>
