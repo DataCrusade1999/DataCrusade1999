@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="137" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="187" class="">
     <defs>
         <style/>
     </defs>
@@ -23,11 +23,15 @@
                         </div>
                         <div class="tweet">
                             RT
-                            <span class="mention">@SantoshYadavDev</span>
-                            : This week I mostly did vibe coding at work , writing some docs , utilities for developers, all using
-                            <span class="mention">@github</span>
-                            copilot a…
-                            <div class="date">21:24:33 on 21 Jul 2025</div>
+                            <span class="mention">@svpino</span>
+                            : Copilot in Beat Mode is literally a beast!
+                            <br />
+                            <br />
+                            I wasn't aware of this until yesterday, and it's looking good (and a bit crazy!)
+                            <br />
+                            <br />
+                            B…
+                            <div class="date">20:58:17 on 22 Jul 2025</div>
                         </div>
                     </section>
                 </div>
