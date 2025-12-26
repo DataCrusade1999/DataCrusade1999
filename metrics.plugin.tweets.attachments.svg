@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="237" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="221" class="">
     <defs>
         <style/>
     </defs>
@@ -22,17 +22,14 @@
                             github
                         </div>
                         <div class="tweet">
-                            Tired of AI code that solves part of the problem but misses the architecture?
+                            Most tools treat code as text. CodeQL treats it as data. 🧠
                             <br />
                             <br />
-                            It’s time to rethink specifications.💡
+                            CodeQL lets you query your code to find logic errors and security issues that standard text search completely misses.
                             <br />
                             <br />
-                            That’s why we built Spec Kit. 🧰 It’s an open source toolkit that provides a structured process to guide tools like GitHub Copilot to better results.
-                            <br />
-                            <br />
-                            Try it
-                            <div class="date">21:06:01 on 24 Dec 2025</div>
+                            It allows you to take one bug and automatically find every other place that same pattern exists—so
+                            <div class="date">19:10:02 on 25 Dec 2025</div>
                         </div>
                     </section>
                 </div>
