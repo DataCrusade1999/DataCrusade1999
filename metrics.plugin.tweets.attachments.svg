@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="137" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="187" class="">
     <defs>
         <style/>
     </defs>
@@ -23,9 +23,15 @@
                         </div>
                         <div class="tweet">
                             RT
-                            <span class="mention">@OliviaGuzzardo</span>
-                            : The Copilot SDK just launched, and I wanted to see how I could use it as an AI API for a non-coding related scenario.…
-                            <div class="date">22:51:12 on 22 Jan 2026</div>
+                            <span class="mention">@itsafiz</span>
+                            : This is huge news!
+                            <br />
+                            <br />
+                            GitHub Copilot SDK made it easy to add agents to your application.
+                            <br />
+                            <br />
+                            The GitHub Copilot SDK is now availab…
+                            <div class="date">21:46:41 on 23 Jan 2026</div>
                         </div>
                     </section>
                 </div>
