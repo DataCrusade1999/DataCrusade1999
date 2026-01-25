@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="187" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="171" class="">
     <defs>
         <style/>
     </defs>
@@ -23,15 +23,12 @@
                         </div>
                         <div class="tweet">
                             RT
-                            <span class="mention">@itsafiz</span>
-                            : This is huge news!
+                            <span class="mention">@eliostruyf</span>
+                            : If you want to get familiar with the GitHub Copilot SDK, here is my sample repo of the Ghostwriter App I created.
                             <br />
                             <br />
-                            GitHub Copilot SDK made it easy to add agents to your application.
-                            <br />
-                            <br />
-                            The GitHub Copilot SDK is now availab…
-                            <div class="date">21:46:41 on 23 Jan 2026</div>
+                            https://…
+                            <div class="date">02:35:17 on 25 Jan 2026</div>
                         </div>
                     </section>
                 </div>
