@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="137" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="221" class="">
     <defs>
         <style/>
     </defs>
@@ -23,11 +23,17 @@
                         </div>
                         <div class="tweet">
                             RT
-                            <span class="mention">@kdaigle</span>
-                            : Hot take from looking at
-                            <span class="mention">@github</span>
-                            Copilot telemetry: benchmarks make coding models look wildly different. Production workflows…
-                            <div class="date">22:50:25 on 19 Mar 2026</div>
+                            <span class="mention">@Nebuk89</span>
+                            : Two of the top GitHub Actions community requests are now live
+                            <br />
+                            <br />
+                            1. Timezone support in crons
+                            <br />
+                            <br />
+                            schedule:
+                            <br />
+                            - cron '30 5 * * 1-5'…
+                            <div class="date">19:22:11 on 20 Mar 2026</div>
                         </div>
                     </section>
                 </div>
