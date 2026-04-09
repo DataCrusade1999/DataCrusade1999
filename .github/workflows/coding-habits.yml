@@ -13,7 +13,7 @@ jobs:
       contents: write
     steps:
       - name: Midly interesting facts
-        uses: lowlighter/metrics@latest
+        uses: dkhokhlov/metrics@master
         with:
           filename: metrics.plugin.habits.facts.svg
           token: ${{ secrets.METRICS_TOKEN }}
