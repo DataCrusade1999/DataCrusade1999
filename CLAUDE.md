@@ -51,9 +51,10 @@ here are `README.md` and the workflow files under `.github/workflows/`.
   `metrics.yml`/`codesnippet.yml` — see https://github.com/lowlighter/metrics#-documentation for
   the full plugin option reference. Never hand-edit a `metrics.plugin.*.svg` or
   `profile-3d-contrib/*.svg` file directly; it will be overwritten on the next scheduled run.
-- To verify a workflow change, trigger it manually (`gh workflow run metrics.yml` or via the
-  Actions tab) rather than waiting for the nightly schedule, and check the run for the specific job
-  you touched.
+- To verify a `metrics.yml` edit, just push it — the push trigger picks it up and `detect` scopes
+  the run to the job(s) you touched, so there's no need to wait for the nightly schedule or dispatch
+  manually. Check the triggered run's `Detect changed jobs` job output to confirm it isolated the
+  right job.
 - `README.md` layout changes (adding/removing/reordering an embedded image, editing bio text, links)
   are plain hand edits — no generation step involved.
 - `patches/` holds one-off patch files that were applied historically; it isn't part of any
