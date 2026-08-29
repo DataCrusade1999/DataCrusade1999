@@ -20,6 +20,15 @@
 # repo with 2 sequential GraphQL calls each, for data the template never
 # rendered) - removed, so it's back to normal speed, but left in this lane
 # since nothing depends on moving it.
+#
+# `detect` diffs this file's previous and current committed versions block
+# by block (per job) and every job below is gated on "did MY block change,
+# or should we run everything anyway". This means editing a single plugin's
+# config and pushing only regenerates that one SVG instead of all 17. It
+# always runs everything for schedule/workflow_dispatch, and falls back to
+# running everything on push too whenever it can't safely tell what changed
+# (new branch, force-push, a change outside `jobs:` like `concurrency:` or
+# the triggers themselves, or any unexpected error in the diffing itself).
 name: Metrics
 on:
   # Schedule updates (At 12:30AM Every Night)
@@ -35,10 +44,76 @@ concurrency:
 permissions:
   contents: write
 jobs:
+  detect:
+    name: Detect changed jobs
+    runs-on: ubuntu-latest
+    outputs:
+      run_all: ${{ steps.diff.outputs.run_all }}
+      changed: ${{ steps.diff.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Diff job blocks against the previous commit
+        id: diff
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_BEFORE: ${{ github.event.before }}
+        run: |
+          FILE=.github/workflows/metrics.yml
+
+          # Everything below runs in a subshell with `set -eu`, so any command
+          # that fails (including one we didn't anticipate) makes `compute`
+          # exit non-zero. The `|| out=ALL` below then falls back to running
+          # every job, which is the safe default - it's what already happens
+          # today, never a regression.
+          compute() {
+            set -eu
+            if [ "$EVENT_NAME" != "push" ]; then
+              echo "ALL"; return
+            fi
+            base="$EVENT_BEFORE"
+            # All-zero SHA on branch creation, or a base commit that's gone
+            # after a force-push: nothing sane to diff against.
+            if [[ "$base" =~ ^0+$ ]] || ! git cat-file -e "$base" 2>/dev/null; then
+              echo "ALL"; return
+            fi
+            before=$(git show "$base:$FILE" 2>/dev/null) || { echo "ALL"; return; }
+            # A change outside `jobs:` (triggers, concurrency, permissions,
+            # comments) can affect every job's behaviour, so treat it like a
+            # change to all of them.
+            before_rest=$(printf '%s' "$before" | yq 'del(.jobs)')
+            after_rest=$(yq 'del(.jobs)' "$FILE")
+            if [ "$before_rest" != "$after_rest" ]; then
+              echo "ALL"; return
+            fi
+            changed=" "
+            for key in $(yq '.jobs | keys | .[]' "$FILE"); do
+              before_block=$(printf '%s' "$before" | yq ".jobs.\"$key\"")
+              after_block=$(yq ".jobs.\"$key\"" "$FILE")
+              if [ "$before_block" != "$after_block" ]; then
+                changed="$changed$key "
+              fi
+            done
+            echo "SOME:$changed"
+          }
+
+          out=$(compute) || out="ALL"
+
+          if [ "$out" = "ALL" ]; then
+            echo "run_all=true" >> "$GITHUB_OUTPUT"
+            echo "changed= " >> "$GITHUB_OUTPUT"
+          else
+            echo "run_all=false" >> "$GITHUB_OUTPUT"
+            echo "changed=${out#SOME:}" >> "$GITHUB_OUTPUT"
+          fi
+
   # Lane 1
   organization-intro:
     name: Organization Introduction
     runs-on: ubuntu-latest
+    needs: detect
+    if: ${{ needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' organization-intro ') }}
     steps:
       - name: Organization introduction
         uses: lowlighter/metrics@latest
@@ -52,8 +127,8 @@ jobs:
   recent-posts:
     name: Recent posts with descriptions and cover images
     runs-on: ubuntu-latest
-    needs: organization-intro
-    if: ${{ !cancelled() }}
+    needs: [organization-intro, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' recent-posts ')) }}
     steps:
       - name: Recent posts with descriptions and cover images
         uses: lowlighter/metrics@latest
@@ -71,8 +146,8 @@ jobs:
   comments:
     name: Community Reactions
     runs-on: ubuntu-latest
-    needs: recent-posts
-    if: ${{ !cancelled() }}
+    needs: [recent-posts, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' comments ')) }}
     steps:
       - name: Comment reactions
         uses: lowlighter/metrics@latest
@@ -87,8 +162,8 @@ jobs:
   community:
     name: Stackoverflow Metrics
     runs-on: ubuntu-latest
-    needs: comments
-    if: ${{ !cancelled() }}
+    needs: [comments, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' community ')) }}
     steps:
       - name: Top answers from stackoverflow
         uses: lowlighter/metrics@latest
@@ -104,8 +179,8 @@ jobs:
   discussion:
     name: My GitHub Discussions
     runs-on: ubuntu-latest
-    needs: community
-    if: ${{ !cancelled() }}
+    needs: [community, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' discussion ')) }}
     steps:
       - name: GitHub Discussions
         uses: lowlighter/metrics@latest
@@ -120,6 +195,8 @@ jobs:
   favourite-language:
     name: Favourite Programming Languages
     runs-on: ubuntu-latest
+    needs: detect
+    if: ${{ needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' favourite-language ') }}
     steps:
       - name: Indepth analysis for programming languages
         uses: lowlighter/metrics@latest
@@ -141,8 +218,8 @@ jobs:
   humor:
     name: Jokes
     runs-on: ubuntu-latest
-    needs: favourite-language
-    if: ${{ !cancelled() }}
+    needs: [favourite-language, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' humor ')) }}
     steps:
       - name: XKCD of the day
         uses: lowlighter/metrics@latest
@@ -158,8 +235,8 @@ jobs:
   my-stars:
     name: Recently Starred Repo
     runs-on: ubuntu-latest
-    needs: humor
-    if: ${{ !cancelled() }}
+    needs: [humor, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' my-stars ')) }}
     steps:
       - name: Recently starred
         uses: lowlighter/metrics@latest
@@ -173,8 +250,8 @@ jobs:
   people:
     name: People
     runs-on: ubuntu-latest
-    needs: my-stars
-    if: ${{ !cancelled() }}
+    needs: [my-stars, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' people ')) }}
     steps:
       - name: Contributors and sponsors
         uses: lowlighter/metrics@latest
@@ -191,6 +268,8 @@ jobs:
   notable-repo:
     name: Notable Repositories
     runs-on: ubuntu-latest
+    needs: detect
+    if: ${{ needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' notable-repo ') }}
     steps:
       - name: Indepth analysis for notable repositories
         uses: lowlighter/metrics@latest
@@ -207,8 +286,8 @@ jobs:
   twitter:
     name: Twitter
     runs-on: ubuntu-latest
-    needs: notable-repo
-    if: ${{ !cancelled() }}
+    needs: [notable-repo, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' twitter ')) }}
     steps:
       - name: Latest tweets including attachments
         uses: lowlighter/metrics@latest
@@ -225,8 +304,8 @@ jobs:
   wakatime:
     name: WakaTime
     runs-on: ubuntu-latest
-    needs: twitter
-    if: ${{ !cancelled() }}
+    needs: [twitter, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' wakatime ')) }}
     steps:
       - name: WakaTime
         uses: lowlighter/metrics@latest
@@ -243,8 +322,8 @@ jobs:
   devcard:
     name: DevCard
     runs-on: ubuntu-latest
-    needs: wakatime
-    if: ${{ !cancelled() }}
+    needs: [wakatime, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' devcard ')) }}
     steps:
       - name: devcard
         uses: dailydotdev/action-devcard@3.2.1
@@ -255,8 +334,8 @@ jobs:
   profile-3d:
     name: generate-github-profile-3d-contrib
     runs-on: ubuntu-latest
-    needs: devcard
-    if: ${{ !cancelled() }}
+    needs: [devcard, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' profile-3d ')) }}
     steps:
       - uses: actions/checkout@v7
       - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
@@ -276,6 +355,8 @@ jobs:
   indepth-analysis:
     name: Indepth Analysis
     runs-on: ubuntu-latest
+    needs: detect
+    if: ${{ needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' indepth-analysis ') }}
     steps:
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
@@ -290,8 +371,8 @@ jobs:
   coding-habits:
     name: Coding Habits
     runs-on: ubuntu-latest
-    needs: indepth-analysis
-    if: ${{ !cancelled() }}
+    needs: [indepth-analysis, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' coding-habits ')) }}
     steps:
       - name: Midly interesting facts
         uses: dkhokhlov/metrics@master
@@ -307,8 +388,8 @@ jobs:
   compact-achievement:
     name: Compact Achievement
     runs-on: ubuntu-latest
-    needs: coding-habits
-    if: ${{ !cancelled() }}
+    needs: [coding-habits, detect]
+    if: ${{ !cancelled() && (needs.detect.outputs.run_all == 'true' || contains(needs.detect.outputs.changed, ' compact-achievement ')) }}
     steps:
       - name: Compact display
         uses: dkhokhlov/metrics@master

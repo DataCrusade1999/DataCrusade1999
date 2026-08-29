@@ -12,8 +12,9 @@ here are `README.md` and the workflow files under `.github/workflows/`.
 
 ## Workflows (the real "build" of this repo)
 
-- `.github/workflows/metrics.yml` — runs nightly (`30 0 * * *`), on manual dispatch, and on every
-  push to `main`. It regenerates all `metrics.plugin.*.svg` files (via `lowlighter/metrics@latest`
+- `.github/workflows/metrics.yml` — runs nightly (`30 0 * * *`), on manual dispatch, and on push to
+  `main` that touches `metrics.yml` itself (scoped via `paths:` so README/docs-only pushes don't
+  trigger a run). It regenerates all `metrics.plugin.*.svg` files (via `lowlighter/metrics@latest`
   and `dkhokhlov/metrics@master`), the dev.to devcard (`dailydotdev/action-devcard`), and the 3D
   contribution graphs under `profile-3d-contrib/` (via `yoshi389111/github-profile-3d-contrib`),
   then commits and pushes the results back to `main`.
@@ -34,6 +35,15 @@ here are `README.md` and the workflow files under `.github/workflows/`.
   scopes than the default `GITHUB_TOKEN`) for plugins that read private/organization data;
   plugins that only hit public third-party APIs (dev.to, Stack Overflow, XKCD, Twitter) use
   `token: NOT_NEEDED` instead.
+- `metrics.yml` starts with a `detect` job that diffs the file's previous vs. current committed
+  version, per job block (via `yq`), and every plugin job is gated on `needs.detect.outputs.run_all
+  == 'true' || contains(needs.detect.outputs.changed, ' <job-key> ')`. On a push that only edits one
+  job's `with:` inputs, only that job runs. It always runs everything for `schedule`/
+  `workflow_dispatch`, and falls back to running everything on push whenever it can't safely tell
+  what changed (new branch, force-push, a change outside `jobs:` like `concurrency:`/triggers, or
+  any error in the diffing script itself) — so a broken diff never silently skips real work. When
+  adding a new job, no changes to `detect` are needed; just give the new job its own `contains(...,
+  ' new-job-key ')` check like the others.
 
 ## Making changes
 
