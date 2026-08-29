@@ -12,11 +12,14 @@
 # to main and failed (stale-sha rejections, "local changes would be
 # overwritten by merge"), since a full run can take 15-20+ minutes.
 #
-# Lane 4 isolates the jobs with unpredictable/heavy runtime (Indepth
-# Analysis routinely takes ~7min; the dkhokhlov/metrics@master fork used by
-# Coding Habits/Compact Achievement rebuilds its Docker image from scratch
-# whenever the cache is cold, taking 10+ min) so they never sit in front of
-# a fast job and block it.
+# Lane 4 isolates the jobs with unpredictable/heavy runtime: the
+# dkhokhlov/metrics@master fork used by Coding Habits/Compact Achievement
+# rebuilds its Docker image from scratch whenever the cache is cold, taking
+# 10+ min, so they never sit in front of a fast job and block it. Indepth
+# Analysis used to take ~7min too (plugin_followup_indepth crawled every
+# repo with 2 sequential GraphQL calls each, for data the template never
+# rendered) - removed, so it's back to normal speed, but left in this lane
+# since nothing depends on moving it.
 name: Metrics
 on:
   # Schedule updates (At 12:30AM Every Night)
@@ -279,7 +282,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_followup: yes
-          plugin_followup_indepth: yes
           plugin_followup_archived: yes
           plugin_followup_sections: user
 
