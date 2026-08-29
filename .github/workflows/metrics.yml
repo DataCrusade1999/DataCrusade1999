@@ -24,9 +24,11 @@ name: Metrics
 on:
   # Schedule updates (At 12:30AM Every Night)
   schedule: [{ cron: "30 0 * * *" }]
-  # Lines below let you run workflow manually and on each commit
+  # Lines below let you run workflow manually and when this file itself changes.
+  # Scoped to this path so pushes that don't touch plugin config (README edits,
+  # docs, etc.) don't trigger a full ~17-job regeneration for nothing.
   workflow_dispatch:
-  push: { branches: ["main"] }
+  push: { branches: ["main"], paths: [".github/workflows/metrics.yml"] }
 concurrency:
   group: metrics
   cancel-in-progress: false
