@@ -1,0 +1,307 @@
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
+#
+# Consolidated from 17 near-identical workflow files into one, one job per
+# profile card. Jobs are split into lanes chained with `needs:` so only a
+# handful of GitHub API callers run at once (avoids secondary rate limits
+# that used to bake "Unexpected error" cards into the generated SVGs).
+# `if: ${{ !cancelled() }}` keeps a lane moving even if an earlier job in it
+# fails, matching the old behaviour where every plugin was fully independent.
+name: Metrics
+on:
+  # Schedule updates (At 12:30AM Every Night)
+  schedule: [{ cron: "30 0 * * *" }]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: { branches: ["main"] }
+permissions:
+  contents: write
+jobs:
+  # Lane 1
+  organization-intro:
+    name: Organization Introduction
+    runs-on: ubuntu-latest
+    steps:
+      - name: Organization introduction
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.introduction.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: DataCrusade1999
+          base: header
+          plugin_introduction: yes
+
+  recent-posts:
+    name: Recent posts with descriptions and cover images
+    runs-on: ubuntu-latest
+    needs: organization-intro
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Recent posts with descriptions and cover images
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.posts.full.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_posts: yes
+          plugin_posts_user: datacrusade1999
+          plugin_posts_source: dev.to
+          plugin_posts_limit: 2
+          plugin_posts_descriptions: yes
+          plugin_posts_covers: yes
+
+  comments:
+    name: Community Reactions
+    runs-on: ubuntu-latest
+    needs: recent-posts
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Comment reactions
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.reactions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_reactions: yes
+          plugin_reactions_limit: 100
+          plugin_reactions_details: percentage
+
+  community:
+    name: Stackoverflow Metrics
+    runs-on: ubuntu-latest
+    needs: comments
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Top answers from stackoverflow
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stackoverflow.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 13128057
+          plugin_stackoverflow_sections: answers-top
+          plugin_stackoverflow_limit: 2
+
+  discussion:
+    name: My GitHub Discussions
+    runs-on: ubuntu-latest
+    needs: community
+    if: ${{ !cancelled() }}
+    steps:
+      - name: GitHub Discussions
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.discussions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_discussions: yes
+          plugin_discussions_categories: yes
+
+  # Lane 2
+  favourite-language:
+    name: Favourite Programming Languages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Indepth analysis for programming languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.indepth.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+
+  humor:
+    name: Jokes
+    runs-on: ubuntu-latest
+    needs: favourite-language
+    if: ${{ !cancelled() }}
+    steps:
+      - name: XKCD of the day
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.screenshot.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_screenshot: yes
+          plugin_screenshot_title: XKCD of the day
+          plugin_screenshot_url: https://xkcd.com
+          plugin_screenshot_selector: "#comic img"
+
+  indepth-analysis:
+    name: Indepth Analysis
+    runs-on: ubuntu-latest
+    needs: humor
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Indepth analysis
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.followup.indepth.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_followup_archived: yes
+          plugin_followup_sections: user
+
+  my-stars:
+    name: Recently Starred Repo
+    runs-on: ubuntu-latest
+    needs: indepth-analysis
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Recently starred
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stars.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+  # Lane 3
+  notable-repo:
+    name: Notable Repositories
+    runs-on: ubuntu-latest
+    steps:
+      - name: Indepth analysis for notable repositories
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.notable.indepth.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit
+
+  people:
+    name: People
+    runs-on: ubuntu-latest
+    needs: notable-repo
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Contributors and sponsors
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.people.repository.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 50
+          plugin_people_size: 50
+
+  twitter:
+    name: Twitter
+    runs-on: ubuntu-latest
+    needs: people
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Latest tweets including attachments
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.tweets.attachments.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_tweets: yes
+          plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
+          plugin_tweets_attachments: yes
+          plugin_tweets_user: github
+          plugin_tweets_limit: 1
+
+  wakatime:
+    name: WakaTime
+    runs-on: ubuntu-latest
+    needs: twitter
+    if: ${{ !cancelled() }}
+    steps:
+      - name: WakaTime
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.wakatime.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime_user: DataCrusade1999
+          plugin_wakatime_days: 7
+
+  # Lane 4
+  coding-habits:
+    name: Coding Habits
+    runs-on: ubuntu-latest
+    steps:
+      - name: Midly interesting facts
+        uses: dkhokhlov/metrics@master
+        with:
+          filename: metrics.plugin.habits.facts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: no
+          config_timezone: Asia/Calcutta
+
+  compact-achievement:
+    name: Compact Achievement
+    runs-on: ubuntu-latest
+    needs: coding-habits
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Compact display
+        uses: dkhokhlov/metrics@master
+        with:
+          filename: metrics.plugin.achievements.compact.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+
+  profile-3d:
+    name: generate-github-profile-3d-contrib
+    runs-on: ubuntu-latest
+    needs: compact-achievement
+    if: ${{ !cancelled() }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git pull origin main
+          git add -A .
+          git commit -m "generated"
+          git push
+
+  devcard:
+    name: DevCard
+    runs-on: ubuntu-latest
+    needs: profile-3d
+    if: ${{ !cancelled() }}
+    steps:
+      - name: devcard
+        uses: dailydotdev/action-devcard@3.2.1
+        with:
+          #filename: devcard.svg
+          user_id: ${{ secrets.DEVCARD_ID }}
