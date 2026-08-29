@@ -6,6 +6,17 @@
 # that used to bake "Unexpected error" cards into the generated SVGs).
 # `if: ${{ !cancelled() }}` keeps a lane moving even if an earlier job in it
 # fails, matching the old behaviour where every plugin was fully independent.
+#
+# `concurrency` queues a new run instead of letting it overlap an in-flight
+# one: two concurrent runs regenerating the same files raced on committing
+# to main and failed (stale-sha rejections, "local changes would be
+# overwritten by merge"), since a full run can take 15-20+ minutes.
+#
+# Lane 4 isolates the jobs with unpredictable/heavy runtime (Indepth
+# Analysis routinely takes ~7min; the dkhokhlov/metrics@master fork used by
+# Coding Habits/Compact Achievement rebuilds its Docker image from scratch
+# whenever the cache is cold, taking 10+ min) so they never sit in front of
+# a fast job and block it.
 name: Metrics
 on:
   # Schedule updates (At 12:30AM Every Night)
@@ -13,6 +24,9 @@ on:
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: { branches: ["main"] }
+concurrency:
+  group: metrics
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -136,27 +150,10 @@ jobs:
           plugin_screenshot_url: https://xkcd.com
           plugin_screenshot_selector: "#comic img"
 
-  indepth-analysis:
-    name: Indepth Analysis
-    runs-on: ubuntu-latest
-    needs: humor
-    if: ${{ !cancelled() }}
-    steps:
-      - name: Indepth analysis
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.followup.indepth.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_followup: yes
-          plugin_followup_indepth: yes
-          plugin_followup_archived: yes
-          plugin_followup_sections: user
-
   my-stars:
     name: Recently Starred Repo
     runs-on: ubuntu-latest
-    needs: indepth-analysis
+    needs: humor
     if: ${{ !cancelled() }}
     steps:
       - name: Recently starred
@@ -167,6 +164,23 @@ jobs:
           base: ""
           plugin_stars: yes
           plugin_stars_limit: 4
+
+  people:
+    name: People
+    runs-on: ubuntu-latest
+    needs: my-stars
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Contributors and sponsors
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.people.repository.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 50
+          plugin_people_size: 50
 
   # Lane 3
   notable-repo:
@@ -185,27 +199,10 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
 
-  people:
-    name: People
-    runs-on: ubuntu-latest
-    needs: notable-repo
-    if: ${{ !cancelled() }}
-    steps:
-      - name: Contributors and sponsors
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.people.repository.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugin_people_types: followers, following
-          plugin_people_limit: 50
-          plugin_people_size: 50
-
   twitter:
     name: Twitter
     runs-on: ubuntu-latest
-    needs: people
+    needs: notable-repo
     if: ${{ !cancelled() }}
     steps:
       - name: Latest tweets including attachments
@@ -238,10 +235,59 @@ jobs:
           plugin_wakatime_user: DataCrusade1999
           plugin_wakatime_days: 7
 
-  # Lane 4
+  devcard:
+    name: DevCard
+    runs-on: ubuntu-latest
+    needs: wakatime
+    if: ${{ !cancelled() }}
+    steps:
+      - name: devcard
+        uses: dailydotdev/action-devcard@3.2.1
+        with:
+          #filename: devcard.svg
+          user_id: ${{ secrets.DEVCARD_ID }}
+
+  profile-3d:
+    name: generate-github-profile-3d-contrib
+    runs-on: ubuntu-latest
+    needs: devcard
+    if: ${{ !cancelled() }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git pull origin main
+          git add -A .
+          git commit -m "generated"
+          git push
+
+  # Lane 4 (slow/unpredictable jobs, isolated so they never block a fast lane)
+  indepth-analysis:
+    name: Indepth Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Indepth analysis
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.followup.indepth.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_followup_archived: yes
+          plugin_followup_sections: user
+
   coding-habits:
     name: Coding Habits
     runs-on: ubuntu-latest
+    needs: indepth-analysis
+    if: ${{ !cancelled() }}
     steps:
       - name: Midly interesting facts
         uses: dkhokhlov/metrics@master
@@ -273,35 +319,3 @@ jobs:
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
           plugin_achievements_secrets: yes
-
-  profile-3d:
-    name: generate-github-profile-3d-contrib
-    runs-on: ubuntu-latest
-    needs: compact-achievement
-    if: ${{ !cancelled() }}
-    steps:
-      - uses: actions/checkout@v7
-      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git pull origin main
-          git add -A .
-          git commit -m "generated"
-          git push
-
-  devcard:
-    name: DevCard
-    runs-on: ubuntu-latest
-    needs: profile-3d
-    if: ${{ !cancelled() }}
-    steps:
-      - name: devcard
-        uses: dailydotdev/action-devcard@3.2.1
-        with:
-          #filename: devcard.svg
-          user_id: ${{ secrets.DEVCARD_ID }}
