@@ -1,8 +1,8 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Community Reactions
 on:
-  # Schedule updates (At 12:30AM Every Night)
-  schedule: [{ cron: "30 0 * * *" }]
+  # Schedule updates (At 12:13AM Every Night)
+  schedule: [{ cron: "13 0 * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: { branches: ["main"] }
