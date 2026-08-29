@@ -1,7 +1,11 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Codesnippet
 on:
-  schedule: [{ cron: "0 0 1 1 0" }]
+  # 03:00 UTC on Jan 1 or any Sunday - offset a few hours from metrics.yml's
+  # 00:30 UTC nightly run so a slow metrics run (can take 15-20+ min) doesn't
+  # overlap this one; they don't share a concurrency group so nothing else
+  # would stop them running at the same time otherwise.
+  schedule: [{ cron: "0 3 1 1 0" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
     branches: ["main"]
