@@ -4,7 +4,7 @@
 
 ![Visitor Counter](https://komarev.com/ghpvc/?username=DataCrusade1999&style=plastic&color=blueviolet)
 
-<a href="https://app.daily.dev/DataCrusade1999"><img src="https://github.com/DataCrusade1999/DataCrusade1999/blob/main/devcard.png" width="300" alt="Ashutosh's Dev Card" align="right"/></a>
+<a href="https://app.daily.dev/DataCrusade1999"><img src="./devcard.png" width="300" alt="Ashutosh's Dev Card" align="right"/></a>
 
 ![ 🙋 Introduction](./metrics.plugin.introduction.svg)
 
