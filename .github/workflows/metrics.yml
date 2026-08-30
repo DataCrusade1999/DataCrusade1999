@@ -348,7 +348,7 @@ jobs:
           git config user.email github-actions@github.com
           git pull origin main
           git add -A .
-          git commit -m "generated"
+          git diff --staged --quiet || git commit -m "generated"
           git push
 
   # Lane 4 (slow/unpredictable jobs, isolated so they never block a fast lane)
